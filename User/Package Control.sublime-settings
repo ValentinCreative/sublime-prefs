@@ -1,0 +1,39 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"ColorPicker",
+		"DashDoc",
+		"DocBlockr",
+		"Emmet",
+		"FakeImg.pl Image Placeholder Snippet",
+		"Foundation 5 Snippets",
+		"GitGutter",
+		"Gutter Color",
+		"HTML Boilerplate",
+		"HTML Mustache",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"HTMLAttributes",
+		"LiveReload",
+		"Nettuts+ Fetch",
+		"PHP-Twig",
+		"SassBeautify",
+		"SCSS",
+		"SFTP",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"Syntax Highlighting for Sass",
+		"Terminal",
+		"Theme - Flatland",
+		"Twig",
+		"WordPress"
+	],
+	"repositories":
+	[
+		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
+	]
+}

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+{{ translate('$1') }}
+]]></content>
+	<tabTrigger>trans</tabTrigger>
+</snippet>
