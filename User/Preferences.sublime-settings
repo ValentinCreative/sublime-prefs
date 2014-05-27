@@ -9,14 +9,16 @@
 		"CVS",
 		".sass-cache",
 		"tmp",
-		"OLD"
+		"OLD",
+		".esproj"
 	],
 	"font_size": 16,
 	"ignored_packages":
 	[
+		"Vintage",
+		"Markdown",
 		"SassBeautify",
-		"AdvancedNewFile",
-		"Vintage"
+		"AdvancedNewFile"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
