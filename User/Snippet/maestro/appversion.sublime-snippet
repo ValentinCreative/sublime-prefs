@@ -1,0 +1,10 @@
+<snippet>
+    <content>{% if appVersion == 'maestro_de' %}
+    $1
+{% elseif appVersion == 'maestro_pl' %}
+    $2
+{% else %}
+    $3
+{% endif %}</content>
+    <tabTrigger>appversion</tabTrigger>
+</snippet>

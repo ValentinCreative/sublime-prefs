@@ -1,0 +1,4 @@
+<snippet>
+    <content>{% endblock %}</content>
+    <tabTrigger>endblock</tabTrigger>
+</snippet>

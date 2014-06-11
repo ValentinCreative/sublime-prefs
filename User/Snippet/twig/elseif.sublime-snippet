@@ -1,0 +1,4 @@
+<snippet>
+    <content>{% elseif %}</content>
+    <tabTrigger>elseif</tabTrigger>
+</snippet>

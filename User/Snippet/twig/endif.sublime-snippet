@@ -1,0 +1,4 @@
+<snippet>
+    <content>{% endif %}</content>
+    <tabTrigger>endif</tabTrigger>
+</snippet>
