@@ -1,0 +1,4 @@
+<snippet>
+    <content>{% endfor %}</content>
+    <tabTrigger>endfor</tabTrigger>
+</snippet>

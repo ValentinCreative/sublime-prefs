@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+if (e) {
+    e.preventDefault();
+}]]></content>
+	<tabTrigger>preventdefault</tabTrigger>
+</snippet>

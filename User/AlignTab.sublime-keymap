@@ -1,0 +1,8 @@
+// latex align keybind, to align & and \\, but not \&
+  {
+      "keys": ["super+shift+a"], "command": "align_tab",
+      "args" : {"user_input" : "(?<!\\\\)&|\\\\\\\\"},
+      "context":[
+          { "key": "selector", "operator": "equal", "operand": "text.tex.latex" }
+      ]
+  }

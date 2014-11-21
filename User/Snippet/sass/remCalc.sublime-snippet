@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+remCalc($1px)
+]]></content>
+	<tabTrigger>remCalc</tabTrigger>
+</snippet>

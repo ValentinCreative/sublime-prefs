@@ -12,13 +12,16 @@
 		"OLD",
 		".esproj"
 	],
-	"font_size": 16,
+	"font_face": "Anonymous Pro",
+	"font_size": 18,
 	"ignored_packages":
 	[
 		"Markdown",
+		"SassBeautify",
+		"jQuery",
+		"LiveReload",
 		"AdvancedNewFile",
-		"Vintage",
-		"SassBeautify"
+		"Vintage"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,

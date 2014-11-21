@@ -1,0 +1,4 @@
+<snippet>
+	<content><![CDATA[@include span-columns($1); ]]></content>
+	<tabTrigger>span-columns</tabTrigger>
+</snippet>

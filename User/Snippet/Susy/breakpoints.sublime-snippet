@@ -1,0 +1,7 @@
+<snippet>
+<content><![CDATA[
+@include at-breakpoint($1) {
+    $2
+}]]></content>
+	<tabTrigger>breakpoint</tabTrigger>
+</snippet>

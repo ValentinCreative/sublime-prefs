@@ -1,0 +1,7 @@
+<snippet>
+    <content>public function $1Action($2)
+{
+    $3
+}</content>
+    <tabTrigger>action</tabTrigger>
+</snippet>

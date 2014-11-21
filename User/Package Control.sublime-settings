@@ -1,8 +1,11 @@
 {
+	"auto_upgrade_last_run": 1331660912,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"Alignment",
+		"AlignTab",
+		"AutoFileName",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Color Highlighter",
@@ -22,6 +25,10 @@
 		"HTML-CSS-JS Prettify",
 		"HTML5",
 		"HTMLAttributes",
+		"ImageMagick",
+		"JavaScriptNext - ES6 Syntax",
+		"jQuery",
+		"JsonTree",
 		"LiveReload",
 		"Markdown Preview",
 		"MarkdownEditing",
@@ -32,17 +39,26 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"SideBarGit",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-scss-lint",
+		"SVG-Snippets",
 		"Syntax Highlighting for Sass",
+		"Takana",
 		"Terminal",
 		"Theme - Flatland",
 		"Twig",
 		"Unicode Character Highlighter",
-		"WordPress"
+		"W3CValidators",
+		"WordPress",
+		"WordPress Generate Salts"
 	],
 	"repositories":
 	[
-		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
+		"https://bitbucket.org/sublimator/sublime-2-zencoding"
+	],
+	"repository_channels":
+	[
+		"http://sublime.wbond.net/repositories.json"
 	]
 }

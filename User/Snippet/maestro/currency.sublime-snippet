@@ -1,0 +1,4 @@
+<snippet>
+    <content>{{ currency.symbol }}</content>
+    <tabTrigger>currency</tabTrigger>
+</snippet>

@@ -1,0 +1,4 @@
+<snippet>
+	<content><![CDATA[echo "<pre style='background:#fff; color:#000'>";var_dump($1);die();]]></content>
+	<tabTrigger>echopre</tabTrigger>
+</snippet>

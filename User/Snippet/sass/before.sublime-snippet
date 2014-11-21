@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+&:before {
+    $1
+}
+]]></content>
+	<tabTrigger>before</tabTrigger>
+</snippet>

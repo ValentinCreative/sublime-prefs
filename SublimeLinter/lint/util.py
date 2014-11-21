@@ -14,16 +14,21 @@
 from functools import lru_cache
 from glob import glob
 import json
+import locale
 from numbers import Number
 import os
 import re
 import shutil
 from string import Template
+import stat
 import sublime
 import subprocess
 import sys
 import tempfile
 from xml.etree import ElementTree
+
+if sublime.platform() != 'windows':
+    import pwd
 
 #
 # Public constants
@@ -155,6 +160,7 @@ def get_view_rc_settings(view, limit=None):
         return None
 
 
+@lru_cache(maxsize=None)
 def get_rc_settings(start_dir, limit=None):
     """
     Search for a file named .sublimelinterrc starting in start_dir.
@@ -167,7 +173,7 @@ def get_rc_settings(start_dir, limit=None):
     """
 
     if not start_dir:
-        return
+        return None
 
     path = find_file(start_dir, '.sublimelinterrc', limit=limit)
 
@@ -185,7 +191,12 @@ def get_rc_settings(start_dir, limit=None):
 
 
 def generate_color_scheme(from_reload=True):
-    """Asynchronously call generate_color_scheme_async."""
+    """
+    Asynchronously call generate_color_scheme_async.
+
+    from_reload is True if this is called from the change callback for user settings.
+
+    """
 
     # If this was called from a reload of prefs, turn off the prefs observer,
     # otherwise we'll end up back here when ST updates the prefs with the new color.
@@ -205,12 +216,24 @@ def generate_color_scheme_async():
     """
     Generate a modified copy of the current color scheme that contains SublimeLinter color entries.
 
-    from_reload is True if this is called from the change callback for user settings.
-
     The current color scheme is checked for SublimeLinter color entries. If any are missing,
     the scheme is copied, the entries are added, and the color scheme is rewritten to Packages/User.
 
     """
+
+    # First make sure the user prefs are valid. If not, bail.
+    path = os.path.join(sublime.packages_path(), 'User', 'Preferences.sublime-settings')
+
+    if (os.path.isfile(path)):
+        try:
+            with open(path, mode='r') as f:
+                json = f.read()
+
+            sublime.decode_value(json)
+        except:
+            from . import persist
+            persist.printf('generate_color_scheme: Preferences.sublime-settings invalid, aborting')
+            return
 
     prefs = sublime.load_settings('Preferences.sublime-settings')
     scheme = prefs.get('color_scheme')
@@ -501,6 +524,7 @@ def climb(start_dir, limit=None):
             limit -= 1
 
 
+@lru_cache(maxsize=None)
 def find_file(start_dir, name, parent=False, limit=None, aux_dirs=[]):
     """
     Find the given file by searching up the file hierarchy from start_dir.
@@ -748,8 +772,9 @@ def which(cmd, module=None):
     Return the full path to the given command, or None if not found.
 
     If cmd is in the form [script]@python[version], find_python is
-    called to locate the appropriate version of python. The result
-    is a tuple of the full python path and the full path to the script
+    called to locate the appropriate version of python. If an executable
+    version of the script can be found, its path is returned. Otherwise
+    the result is a tuple of the full python path and the full path to the script
     (or None if there is no script).
 
     """
@@ -759,7 +784,19 @@ def which(cmd, module=None):
     if match:
         args = match.groupdict()
         args['module'] = module
-        return find_python(**args)[0:2]
+        path = find_python(**args)[0:2]
+
+        # If a script is requested and an executable path is returned
+        # with no script path, just use the executable.
+        if (
+            path is not None and
+            path[0] is not None and
+            path[1] is None and
+            args['script']  # for the case where there is no script in cmd
+        ):
+            return path[0]
+        else:
+            return path
     else:
         return find_executable(cmd)
 
@@ -880,6 +917,9 @@ def find_python(version=None, script=None, module=None):
 
                 if script_path is None:
                     path = None
+                elif script_path.endswith('.exe'):
+                    path = script_path
+                    script_path = None
         else:
             path = script_path = None
 
@@ -956,7 +996,7 @@ def find_windows_python(version):
         stripped_version = version.replace('.', '')
         prefix = os.path.abspath('\\Python')
         prefix_len = len(prefix)
-        dirs = glob(prefix + '*')
+        dirs = sorted(glob(prefix + '*'), reverse=True)
         from . import persist
 
         # Try the exact version first, then the major version
@@ -983,13 +1023,19 @@ def find_python_script(python_path, script):
     if sublime.platform() in ('osx', 'linux'):
         return which(script)
     else:
-        # On Windows, scripts are .py files in <python directory>/Scripts
-        script_path = os.path.join(os.path.dirname(python_path), 'Scripts', script + '-script.py')
+        # On Windows, scripts may be .exe files or .py files in <python directory>/Scripts
+        scripts_path = os.path.join(os.path.dirname(python_path), 'Scripts')
+        script_path = os.path.join(scripts_path, script + '.exe')
 
         if os.path.exists(script_path):
             return script_path
-        else:
-            return None
+
+        script_path = os.path.join(scripts_path, script + '-script.py')
+
+        if os.path.exists(script_path):
+            return script_path
+
+        return None
 
 
 @lru_cache(maxsize=None)
@@ -1075,17 +1121,32 @@ def get_subl_executable_path():
 
 # popen utils
 
+def decode(bytes):
+    """
+    Decode and return a byte string using utf8, falling back to system's encoding if that fails.
+
+    So far we only have to do this because javac is so utterly hopeless it uses CP1252
+    for its output on Windows instead of UTF8, even if the input encoding is specified as UTF8.
+    Brilliant! But then what else would you expect from Oracle?
+
+    """
+    if not bytes:
+        return ''
+
+    try:
+        return bytes.decode('utf8')
+    except UnicodeError:
+        return bytes.decode(locale.getpreferredencoding(), errors='replace')
+
+
 def combine_output(out, sep=''):
     """Return stdout and/or stderr combined into a string, stripped of ANSI colors."""
-    output = sep.join((
-        (out[0].decode('utf8') or '') if out[0] else '',
-        (out[1].decode('utf8') or '') if out[1] else '',
-    ))
+    output = sep.join((decode(out[0]), decode(out[1])))
 
     return ANSI_COLOR_RE.sub('', output)
 
 
-def communicate(cmd, code='', output_stream=STREAM_STDOUT, env=None):
+def communicate(cmd, code=None, output_stream=STREAM_STDOUT, env=None):
     """
     Return the result of sending code via stdin to an executable.
 
@@ -1095,11 +1156,37 @@ def communicate(cmd, code='', output_stream=STREAM_STDOUT, env=None):
 
     """
 
-    out = popen(cmd, output_stream=output_stream, extra_env=env)
+    # On Windows, using subprocess.PIPE with Popen() is broken when not
+    # sending input through stdin. So we use temp files instead of a pipe.
+    if code is None and os.name == 'nt':
+        if output_stream != STREAM_STDERR:
+            stdout = tempfile.TemporaryFile()
+        else:
+            stdout = None
+
+        if output_stream != STREAM_STDOUT:
+            stderr = tempfile.TemporaryFile()
+        else:
+            stderr = None
+    else:
+        stdout = stderr = None
+
+    out = popen(cmd, stdout=stdout, stderr=stderr, output_stream=output_stream, extra_env=env)
 
     if out is not None:
-        code = code.encode('utf8')
+        if code is not None:
+            code = code.encode('utf8')
+
         out = out.communicate(code)
+
+        if code is None and os.name == 'nt':
+            out = list(out)
+
+            for f, index in ((stdout, 0), (stderr, 1)):
+                if f is not None:
+                    f.seek(0)
+                    out[index] = f.read()
+
         return combine_output(out)
     else:
         return ''
@@ -1107,10 +1194,34 @@ def communicate(cmd, code='', output_stream=STREAM_STDOUT, env=None):
 
 def create_tempdir():
     """Create a directory within the system temp directory used to create temp files."""
-    if os.path.isdir(tempdir):
-        shutil.rmtree(tempdir)
+    try:
+        if os.path.isdir(tempdir):
+            shutil.rmtree(tempdir)
 
-    os.mkdir(tempdir)
+        os.mkdir(tempdir)
+
+        # Make sure the directory can be removed by anyone in case the user
+        # runs ST later as another user.
+        os.chmod(tempdir, stat.S_IRWXU | stat.S_IRWXG | stat.S_IRWXO)
+
+    except PermissionError:
+        if sublime.platform() != 'windows':
+            current_user = pwd.getpwuid(os.geteuid())[0]
+            temp_uid = os.stat(tempdir).st_uid
+            temp_user = pwd.getpwuid(temp_uid)[0]
+            message = (
+                'The SublimeLinter temp directory:\n\n{0}\n\ncould not be cleared '
+                'because it is owned by \'{1}\' and you are logged in as \'{2}\'. '
+                'Please use sudo to remove the temp directory from a terminal.'
+            ).format(tempdir, temp_user, current_user)
+        else:
+            message = (
+                'The SublimeLinter temp directory ({}) could not be reset '
+                'because it belongs to a different user.'
+            ).format(tempdir)
+
+        sublime.error_message(message)
+
     from . import persist
     persist.debug('temp directory:', tempdir)
 
@@ -1152,13 +1263,7 @@ def tmpfile(cmd, code, filename, suffix='', output_stream=STREAM_STDOUT, env=Non
         else:
             cmd.append(path)
 
-        out = popen(cmd, output_stream=output_stream, extra_env=env)
-
-        if out:
-            out = out.communicate()
-            return combine_output(out)
-        else:
-            return ''
+        return communicate(cmd, output_stream=output_stream, env=env)
     finally:
         os.remove(path)
 
@@ -1200,42 +1305,38 @@ def tmpdir(cmd, files, filename, code, output_stream=STREAM_STDOUT, env=None):
                 shutil.copyfile(f, target)
 
         os.chdir(d)
-        out = popen(cmd, output_stream=output_stream, extra_env=env)
+        out = communicate(cmd, output_stream=output_stream, env=env)
 
         if out:
-            out = out.communicate()
-            out = combine_output(out, sep='\n')
-
             # filter results from build to just this filename
             # no guarantee all syntaxes are as nice about this as Go
             # may need to improve later or just defer to communicate()
             out = '\n'.join([
                 line for line in out.split('\n') if filename in line.split(':', 1)[0]
             ])
-        else:
-            out = ''
 
     return out or ''
 
 
-def popen(cmd, output_stream=STREAM_BOTH, env=None, extra_env=None):
+def popen(cmd, stdout=None, stderr=None, output_stream=STREAM_BOTH, env=None, extra_env=None):
     """Open a pipe to an external process and return a Popen object."""
 
     info = None
 
     if os.name == 'nt':
         info = subprocess.STARTUPINFO()
-        info.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        info.dwFlags |= subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW
         info.wShowWindow = subprocess.SW_HIDE
 
     if output_stream == STREAM_BOTH:
-        stdout = stderr = subprocess.PIPE
+        stdout = stdout or subprocess.PIPE
+        stderr = stderr or subprocess.PIPE
     elif output_stream == STREAM_STDOUT:
-        stdout = subprocess.PIPE
+        stdout = stdout or subprocess.PIPE
         stderr = subprocess.DEVNULL
     else:  # STREAM_STDERR
         stdout = subprocess.DEVNULL
-        stderr = subprocess.PIPE
+        stderr = stderr or subprocess.PIPE
 
     if env is None:
         env = create_environment()
@@ -1245,9 +1346,13 @@ def popen(cmd, output_stream=STREAM_BOTH, env=None, extra_env=None):
 
     try:
         return subprocess.Popen(
-            cmd, stdin=subprocess.PIPE,
-            stdout=stdout, stderr=stderr,
-            startupinfo=info, env=env)
+            cmd,
+            stdin=subprocess.PIPE,
+            stdout=stdout,
+            stderr=stderr,
+            startupinfo=info,
+            env=env
+        )
     except Exception as err:
         from . import persist
         persist.printf('ERROR: could not launch', repr(cmd))
@@ -1266,8 +1371,8 @@ def apply_to_all_views(callback):
 
 # misc utils
 
-def clear_caches():
-    """Clear the caches of all methods in this module that use an lru_cache."""
+def clear_path_caches():
+    """Clear the caches of all path-related methods in this module that use an lru_cache."""
     create_environment.cache_clear()
     which.cache_clear()
     find_python.cache_clear()

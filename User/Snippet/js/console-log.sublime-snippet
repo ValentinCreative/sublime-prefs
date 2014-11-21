@@ -1,0 +1,4 @@
+<snippet>
+    <content>console.log($1);</content>
+    <tabTrigger>consolelog</tabTrigger>
+</snippet>

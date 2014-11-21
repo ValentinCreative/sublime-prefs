@@ -38,15 +38,49 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_DDDDDDFF</string>
+<string>mcol_000000FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#DDDDDDFF</string>
+<string>#000000FF</string>
 <key>caret</key>
-<string>#212121FF</string>
+<string>#FFFFFFFF</string>
 <key>foreground</key>
-<string>#212121FF</string>
+<string>#FFFFFFFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_FFFFFFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#FFFFFFFF</string>
+<key>caret</key>
+<string>#000000FF</string>
+<key>foreground</key>
+<string>#000000FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_7F7F7F4C</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#7F7F7F4C</string>
+<key>caret</key>
+<string>#262626FF</string>
+<key>foreground</key>
+<string>#262626FF</string>
 </dict>
 </dict>
 
@@ -72,15 +106,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_3C3C3CFF</string>
+<string>mcol_F8F8F7FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#3C3C3CFF</string>
+<string>#F8F8F7FF</string>
 <key>caret</key>
-<string>#C3C3C3FF</string>
+<string>#080807FF</string>
 <key>foreground</key>
-<string>#C3C3C3FF</string>
+<string>#080807FF</string>
 </dict>
 </dict>
 
@@ -89,15 +123,134 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_FFE000FF</string>
+<string>mcol_ECECE9FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#FFE000FF</string>
+<string>#ECECE9FF</string>
 <key>caret</key>
-<string>#001EFFFF</string>
+<string>#151512FF</string>
 <key>foreground</key>
-<string>#001EFFFF</string>
+<string>#151512FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_F45B5BFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#F45B5BFF</string>
+<key>caret</key>
+<string>#A40A0AFF</string>
+<key>foreground</key>
+<string>#A40A0AFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_979798FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#979798FF</string>
+<key>caret</key>
+<string>#676768FF</string>
+<key>foreground</key>
+<string>#676768FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_00000066</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#00000066</string>
+<key>caret</key>
+<string>#FFFFFFFF</string>
+<key>foreground</key>
+<string>#FFFFFFFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_F45B5BCC</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#F45B5BCC</string>
+<key>caret</key>
+<string>#A40A0AFF</string>
+<key>foreground</key>
+<string>#A40A0AFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_E3E4E6FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#E3E4E6FF</string>
+<key>caret</key>
+<string>#191A1CFF</string>
+<key>foreground</key>
+<string>#191A1CFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_AFAFAFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#AFAFAFFF</string>
+<key>caret</key>
+<string>#505050FF</string>
+<key>foreground</key>
+<string>#505050FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_2E5DADFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#2E5DADFF</string>
+<key>caret</key>
+<string>#10203CFF</string>
+<key>foreground</key>
+<string>#10203CFF</string>
 </dict>
 </dict>
 
@@ -146,9 +299,26 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#7C7C7CFF</string>
 <key>caret</key>
-<string>#838383FF</string>
+<string>#262626FF</string>
 <key>foreground</key>
-<string>#838383FF</string>
+<string>#262626FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_3C3C3CFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#3C3C3CFF</string>
+<key>caret</key>
+<string>#C3C3C3FF</string>
+<key>foreground</key>
+<string>#C3C3C3FF</string>
 </dict>
 </dict>
 
@@ -174,32 +344,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_218EC0FF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#218EC0FF</string>
-<key>caret</key>
-<string>#DE703EFF</string>
-<key>foreground</key>
-<string>#DE703EFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
 <string>mcol_5BC0DEFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
 <string>#5BC0DEFF</string>
 <key>caret</key>
-<string>#A33E20FF</string>
+<string>#2086A3FF</string>
 <key>foreground</key>
-<string>#A33E20FF</string>
+<string>#2086A3FF</string>
 </dict>
 </dict>
 
@@ -214,9 +367,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#2A8F22FF</string>
 <key>caret</key>
-<string>#D570DDFF</string>
+<string>#77DD70FF</string>
 <key>foreground</key>
-<string>#D570DDFF</string>
+<string>#77DD70FF</string>
 </dict>
 </dict>
 
@@ -231,9 +384,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#DFF0D8FF</string>
 <key>caret</key>
-<string>#1F0F27FF</string>
+<string>#16270FFF</string>
 <key>foreground</key>
-<string>#1F0F27FF</string>
+<string>#16270FFF</string>
 </dict>
 </dict>
 
@@ -248,9 +401,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#F37800FF</string>
 <key>caret</key>
-<string>#0C87FFFF</string>
+<string>#4C2500FF</string>
 <key>foreground</key>
-<string>#0C87FFFF</string>
+<string>#4C2500FF</string>
 </dict>
 </dict>
 
@@ -259,15 +412,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_DE0707FF</string>
+<string>mcol_EC5416FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#DE0707FF</string>
+<string>#EC5416FF</string>
 <key>caret</key>
-<string>#20F8F8FF</string>
+<string>#461805FF</string>
 <key>foreground</key>
-<string>#20F8F8FF</string>
+<string>#461805FF</string>
 </dict>
 </dict>
 
@@ -282,9 +435,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#D50100FF</string>
 <key>caret</key>
-<string>#29FEFFFF</string>
+<string>#FF2A29FF</string>
 <key>foreground</key>
-<string>#29FEFFFF</string>
+<string>#FF2A29FF</string>
 </dict>
 </dict>
 
@@ -299,9 +452,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#7D9E22FF</string>
 <key>caret</key>
-<string>#8261DDFF</string>
+<string>#BCDD60FF</string>
 <key>foreground</key>
-<string>#8261DDFF</string>
+<string>#BCDD60FF</string>
 </dict>
 </dict>
 
@@ -316,9 +469,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#EB3C04FF</string>
 <key>caret</key>
-<string>#14C2FBFF</string>
+<string>#4B1301FF</string>
 <key>foreground</key>
-<string>#14C2FBFF</string>
+<string>#4B1301FF</string>
 </dict>
 </dict>
 
@@ -333,9 +486,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#F37F00FF</string>
 <key>caret</key>
-<string>#0C80FFFF</string>
+<string>#4C2700FF</string>
 <key>foreground</key>
-<string>#0C80FFFF</string>
+<string>#4C2700FF</string>
 </dict>
 </dict>
 
@@ -350,9 +503,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#3293A0FF</string>
 <key>caret</key>
-<string>#CD6B5FFF</string>
+<string>#5FC0CDFF</string>
 <key>foreground</key>
-<string>#CD6B5FFF</string>
+<string>#5FC0CDFF</string>
 </dict>
 </dict>
 
@@ -367,9 +520,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#C5007CFF</string>
 <key>caret</key>
-<string>#39FF83FF</string>
+<string>#FF3AB5FF</string>
 <key>foreground</key>
-<string>#39FF83FF</string>
+<string>#FF3AB5FF</string>
 </dict>
 </dict>
 
@@ -384,9 +537,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#96BE0DFF</string>
 <key>caret</key>
-<string>#6941F2FF</string>
+<string>#CAF240FF</string>
 <key>foreground</key>
-<string>#6941F2FF</string>
+<string>#CAF240FF</string>
 </dict>
 </dict>
 
@@ -401,9 +554,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#1B68AEFF</string>
 <key>caret</key>
-<string>#E49751FF</string>
+<string>#519DE4FF</string>
 <key>foreground</key>
-<string>#E49751FF</string>
+<string>#519DE4FF</string>
 </dict>
 </dict>
 
@@ -418,9 +571,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#A64D94FF</string>
 <key>caret</key>
-<string>#58B26AFF</string>
+<string>#34182EFF</string>
 <key>foreground</key>
-<string>#58B26AFF</string>
+<string>#34182EFF</string>
 </dict>
 </dict>
 
@@ -435,9 +588,111 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#91682CFF</string>
 <key>caret</key>
-<string>#6E97D3FF</string>
+<string>#D3AA6DFF</string>
 <key>foreground</key>
-<string>#6E97D3FF</string>
+<string>#D3AA6DFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_A77B8BFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#A77B8BFF</string>
+<key>caret</key>
+<string>#2D1E24FF</string>
+<key>foreground</key>
+<string>#2D1E24FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_82A098FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#82A098FF</string>
+<key>caret</key>
+<string>#212B28FF</string>
+<key>foreground</key>
+<string>#212B28FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_AE9285FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#AE9285FF</string>
+<key>caret</key>
+<string>#795D50FF</string>
+<key>foreground</key>
+<string>#795D50FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_8B9EAFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#8B9EAFFF</string>
+<key>caret</key>
+<string>#506273FF</string>
+<key>foreground</key>
+<string>#506273FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_A6AA6FFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#A6AA6FFF</string>
+<key>caret</key>
+<string>#2E301CFF</string>
+<key>foreground</key>
+<string>#2E301CFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_887A95FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#887A95FF</string>
+<key>caret</key>
+<string>#26212AFF</string>
+<key>foreground</key>
+<string>#26212AFF</string>
 </dict>
 </dict>
 
@@ -480,83 +735,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_CCCCCCFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#CCCCCCFF</string>
-<key>caret</key>
-<string>#323232FF</string>
-<key>foreground</key>
-<string>#323232FF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_DE0707 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#DE0707 !DEFAULTFF</string>
-<key>caret</key>
-<string>#20F8F8FF</string>
-<key>foreground</key>
-<string>#20F8F8FF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_D50100 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#D50100 !DEFAULTFF</string>
-<key>caret</key>
-<string>#29FEFFFF</string>
-<key>foreground</key>
-<string>#29FEFFFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_EB3C04 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#EB3C04 !DEFAULTFF</string>
-<key>caret</key>
-<string>#14C2FBFF</string>
-<key>foreground</key>
-<string>#14C2FBFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
 <string>mcol_C5007C !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
 <string>#C5007C !DEFAULTFF</string>
 <key>caret</key>
-<string>#39FF83FF</string>
+<string>#FF3AB5FF</string>
 <key>foreground</key>
-<string>#39FF83FF</string>
+<string>#FF3AB5FF</string>
 </dict>
 </dict>
 
@@ -571,9 +758,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#A64D94 !DEFAULTFF</string>
 <key>caret</key>
-<string>#58B26AFF</string>
+<string>#34182EFF</string>
 <key>foreground</key>
-<string>#58B26AFF</string>
+<string>#34182EFF</string>
 </dict>
 </dict>
 
@@ -582,15 +769,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_FFE000 !DEFAULTFF</string>
+<string>mcol_5BC0DE !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#FFE000 !DEFAULTFF</string>
+<string>#5BC0DE !DEFAULTFF</string>
 <key>caret</key>
-<string>#001EFFFF</string>
+<string>#2086A3FF</string>
 <key>foreground</key>
-<string>#001EFFFF</string>
+<string>#2086A3FF</string>
 </dict>
 </dict>
 
@@ -599,15 +786,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_2A8F22 !DEFAULTFF</string>
+<string>mcol_3293A0 !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#2A8F22 !DEFAULTFF</string>
+<string>#3293A0 !DEFAULTFF</string>
 <key>caret</key>
-<string>#D570DDFF</string>
+<string>#5FC0CDFF</string>
 <key>foreground</key>
-<string>#D570DDFF</string>
+<string>#5FC0CDFF</string>
 </dict>
 </dict>
 
@@ -616,15 +803,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_DFF0D8 !DEFAULTFF</string>
+<string>mcol_1B68AE !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#DFF0D8 !DEFAULTFF</string>
+<string>#1B68AE !DEFAULTFF</string>
 <key>caret</key>
-<string>#1F0F27FF</string>
+<string>#519DE4FF</string>
 <key>foreground</key>
-<string>#1F0F27FF</string>
+<string>#519DE4FF</string>
 </dict>
 </dict>
 
@@ -633,49 +820,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_91682C !DEFAULTFF</string>
+<string>mcol_F37F00 !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#91682C !DEFAULTFF</string>
+<string>#F37F00 !DEFAULTFF</string>
 <key>caret</key>
-<string>#6E97D3FF</string>
+<string>#4C2700FF</string>
 <key>foreground</key>
-<string>#6E97D3FF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_F37800 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#F37800 !DEFAULTFF</string>
-<key>caret</key>
-<string>#0C87FFFF</string>
-<key>foreground</key>
-<string>#0C87FFFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_3C3C3C !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#3C3C3C !DEFAULTFF</string>
-<key>caret</key>
-<string>#C3C3C3FF</string>
-<key>foreground</key>
-<string>#C3C3C3FF</string>
+<string>#4C2700FF</string>
 </dict>
 </dict>
 
@@ -724,9 +877,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#7C7C7C !DEFAULTFF</string>
 <key>caret</key>
-<string>#838383FF</string>
+<string>#262626FF</string>
 <key>foreground</key>
-<string>#838383FF</string>
+<string>#262626FF</string>
 </dict>
 </dict>
 
@@ -735,83 +888,15 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_F37F00 !DEFAULTFF</string>
+<string>mcol_3C3C3C !DEFAULTFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#F37F00 !DEFAULTFF</string>
+<string>#3C3C3C !DEFAULTFF</string>
 <key>caret</key>
-<string>#0C80FFFF</string>
+<string>#C3C3C3FF</string>
 <key>foreground</key>
-<string>#0C80FFFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_218EC0 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#218EC0 !DEFAULTFF</string>
-<key>caret</key>
-<string>#DE703EFF</string>
-<key>foreground</key>
-<string>#DE703EFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_5BC0DE !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#5BC0DE !DEFAULTFF</string>
-<key>caret</key>
-<string>#A33E20FF</string>
-<key>foreground</key>
-<string>#A33E20FF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_3293A0 !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#3293A0 !DEFAULTFF</string>
-<key>caret</key>
-<string>#CD6B5FFF</string>
-<key>foreground</key>
-<string>#CD6B5FFF</string>
-</dict>
-</dict>
-
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_1B68AE !DEFAULTFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#1B68AE !DEFAULTFF</string>
-<key>caret</key>
-<string>#E49751FF</string>
-<key>foreground</key>
-<string>#E49751FF</string>
+<string>#C3C3C3FF</string>
 </dict>
 </dict>
 
@@ -826,9 +911,332 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#7D9E22 !DEFAULTFF</string>
 <key>caret</key>
-<string>#8261DDFF</string>
+<string>#BCDD60FF</string>
 <key>foreground</key>
-<string>#8261DDFF</string>
+<string>#BCDD60FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_D50100 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#D50100 !DEFAULTFF</string>
+<key>caret</key>
+<string>#FF2A29FF</string>
+<key>foreground</key>
+<string>#FF2A29FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_EB3C04 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#EB3C04 !DEFAULTFF</string>
+<key>caret</key>
+<string>#4B1301FF</string>
+<key>foreground</key>
+<string>#4B1301FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_2A8F22 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#2A8F22 !DEFAULTFF</string>
+<key>caret</key>
+<string>#77DD70FF</string>
+<key>foreground</key>
+<string>#77DD70FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DFF0D8 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DFF0D8 !DEFAULTFF</string>
+<key>caret</key>
+<string>#16270FFF</string>
+<key>foreground</key>
+<string>#16270FFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_91682C !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#91682C !DEFAULTFF</string>
+<key>caret</key>
+<string>#D3AA6DFF</string>
+<key>foreground</key>
+<string>#D3AA6DFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_F37800 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#F37800 !DEFAULTFF</string>
+<key>caret</key>
+<string>#4C2500FF</string>
+<key>foreground</key>
+<string>#4C2500FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_FFE000FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#FFE000FF</string>
+<key>caret</key>
+<string>#4C4300FF</string>
+<key>foreground</key>
+<string>#4C4300FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_218EC0FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#218EC0FF</string>
+<key>caret</key>
+<string>#0B3041FF</string>
+<key>foreground</key>
+<string>#0B3041FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_43AF3BFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#43AF3BFF</string>
+<key>caret</key>
+<string>#153913FF</string>
+<key>foreground</key>
+<string>#153913FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DE0707FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DE0707FF</string>
+<key>caret</key>
+<string>#4A0202FF</string>
+<key>foreground</key>
+<string>#4A0202FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_3B5998FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#3B5998FF</string>
+<key>caret</key>
+<string>#6784C3FF</string>
+<key>foreground</key>
+<string>#6784C3FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_55ACEEFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#55ACEEFF</string>
+<key>caret</key>
+<string>#1067AAFF</string>
+<key>foreground</key>
+<string>#1067AAFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DD4B39FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DD4B39FF</string>
+<key>caret</key>
+<string>#41110BFF</string>
+<key>foreground</key>
+<string>#41110BFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_900CE8FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#900CE8FF</string>
+<key>caret</key>
+<string>#2D0348FF</string>
+<key>foreground</key>
+<string>#2D0348FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_CCCCCCFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#CCCCCCFF</string>
+<key>caret</key>
+<string>#323232FF</string>
+<key>foreground</key>
+<string>#323232FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_218EC0 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#218EC0 !DEFAULTFF</string>
+<key>caret</key>
+<string>#0B3041FF</string>
+<key>foreground</key>
+<string>#0B3041FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DE0707 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DE0707 !DEFAULTFF</string>
+<key>caret</key>
+<string>#4A0202FF</string>
+<key>foreground</key>
+<string>#4A0202FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_43AF3B !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#43AF3B !DEFAULTFF</string>
+<key>caret</key>
+<string>#153913FF</string>
+<key>foreground</key>
+<string>#153913FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_FFE000 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#FFE000 !DEFAULTFF</string>
+<key>caret</key>
+<string>#4C4300FF</string>
+<key>foreground</key>
+<string>#4C4300FF</string>
 </dict>
 </dict>
 
@@ -877,9 +1285,77 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 <key>background</key>
 <string>#96BE0D !DEFAULTFF</string>
 <key>caret</key>
-<string>#6941F2FF</string>
+<string>#CAF240FF</string>
 <key>foreground</key>
-<string>#6941F2FF</string>
+<string>#CAF240FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_900CE8 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#900CE8 !DEFAULTFF</string>
+<key>caret</key>
+<string>#2D0348FF</string>
+<key>foreground</key>
+<string>#2D0348FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DD4B39 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DD4B39 !DEFAULTFF</string>
+<key>caret</key>
+<string>#41110BFF</string>
+<key>foreground</key>
+<string>#41110BFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_3B5998 !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#3B5998 !DEFAULTFF</string>
+<key>caret</key>
+<string>#6784C3FF</string>
+<key>foreground</key>
+<string>#6784C3FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_55ACEE !DEFAULTFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#55ACEE !DEFAULTFF</string>
+<key>caret</key>
+<string>#1067AAFF</string>
+<key>foreground</key>
+<string>#1067AAFF</string>
 </dict>
 </dict>
 

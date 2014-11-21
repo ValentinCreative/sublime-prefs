@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+echo "<pre style='background:#fff; color:#000'>";\Doctrine\Common\Util\Debug::dump($1);die();
+        ]]></content>
+	<tabTrigger>doctrineDump</tabTrigger>
+</snippet>

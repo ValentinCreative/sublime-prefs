@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+\$this->getEntityManager()->persist($1);
+]]></content>
+    <tabTrigger>persist</tabTrigger>
+</snippet>
