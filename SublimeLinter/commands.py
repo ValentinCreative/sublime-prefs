@@ -13,6 +13,7 @@
 
 import datetime
 from fnmatch import fnmatch
+from glob import glob
 import json
 import os
 import re
@@ -60,7 +61,6 @@ def select_line(view, line):
 
 
 class SublimelinterLintCommand(sublime_plugin.TextCommand):
-
     """A command that lints the current view if it has a linter."""
 
     def is_enabled(self):
@@ -92,11 +92,10 @@ class SublimelinterLintCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         """Lint the current view."""
         from .sublimelinter import SublimeLinter
-        SublimeLinter.shared_plugin().lint(self.view.id())
+        SublimeLinter.shared_plugin().hit(self.view)
 
 
 class HasErrorsCommand:
-
     """
     A mixin class for sublime_plugin.TextCommand subclasses.
 
@@ -111,7 +110,6 @@ class HasErrorsCommand:
 
 
 class GotoErrorCommand(sublime_plugin.TextCommand):
-
     """A superclass for commands that go to the next/previous error."""
 
     def goto_error(self, view, errors, direction='next'):
@@ -141,16 +139,16 @@ class GotoErrorCommand(sublime_plugin.TextCommand):
         if direction == 'next':
             for region in regions:
                 if (
-                    (point == region.begin() and empty_selection and not region.empty())
-                    or (point < region.begin())
+                    (point == region.begin() and empty_selection and not region.empty()) or
+                    (point < region.begin())
                 ):
                     region_to_select = region
                     break
         else:
             for region in reversed(regions):
                 if (
-                    (point == region.end() and empty_selection and not region.empty())
-                    or (point > region.end())
+                    (point == region.end() and empty_selection and not region.empty()) or
+                    (point > region.end())
                 ):
                     region_to_select = region
                     break
@@ -208,7 +206,6 @@ class GotoErrorCommand(sublime_plugin.TextCommand):
 
 
 class SublimelinterGotoErrorCommand(GotoErrorCommand):
-
     """A command that selects the next/previous error."""
 
     @error_command
@@ -218,7 +215,6 @@ class SublimelinterGotoErrorCommand(GotoErrorCommand):
 
 
 class SublimelinterShowAllErrors(sublime_plugin.TextCommand):
-
     """A command that shows a quick panel with all of the errors in the current view."""
 
     @error_command
@@ -284,7 +280,6 @@ class SublimelinterShowAllErrors(sublime_plugin.TextCommand):
 
 
 class SublimelinterToggleSettingCommand(sublime_plugin.WindowCommand):
-
     """Command that toggles a setting."""
 
     def __init__(self, window):
@@ -326,7 +321,6 @@ class SublimelinterToggleSettingCommand(sublime_plugin.WindowCommand):
 
 
 class ChooseSettingCommand(sublime_plugin.WindowCommand):
-
     """An abstract base class for commands that choose a setting from a list."""
 
     def __init__(self, window, setting=None, preview=False):
@@ -497,7 +491,6 @@ def choose_setting_command(setting, preview):
 
 @choose_setting_command('lint_mode', preview=False)
 class SublimelinterChooseLintModeCommand(ChooseSettingCommand):
-
     """A command that selects a lint mode from a list."""
 
     def get_settings(self):
@@ -515,7 +508,6 @@ class SublimelinterChooseLintModeCommand(ChooseSettingCommand):
 
 @choose_setting_command('mark_style', preview=True)
 class SublimelinterChooseMarkStyleCommand(ChooseSettingCommand):
-
     """A command that selects a mark style from a list."""
 
     def get_settings(self):
@@ -525,7 +517,6 @@ class SublimelinterChooseMarkStyleCommand(ChooseSettingCommand):
 
 @choose_setting_command('gutter_theme', preview=True)
 class SublimelinterChooseGutterThemeCommand(ChooseSettingCommand):
-
     """A command that selects a gutter theme from a list."""
 
     def get_settings(self):
@@ -638,7 +629,6 @@ class SublimelinterChooseGutterThemeCommand(ChooseSettingCommand):
 
 
 class SublimelinterToggleLinterCommand(sublime_plugin.WindowCommand):
-
     """A command that toggles, enables, or disables linter plugins."""
 
     def __init__(self, window):
@@ -700,7 +690,6 @@ class SublimelinterToggleLinterCommand(sublime_plugin.WindowCommand):
 
 
 class SublimelinterCreateLinterPluginCommand(sublime_plugin.WindowCommand):
-
     """A command that creates a new linter plugin."""
 
     def run(self):
@@ -837,7 +826,7 @@ class SublimelinterCreateLinterPluginCommand(sublime_plugin.WindowCommand):
             '__class__': self.camel_case(name),
             '__superclass__': info.get('superclass', 'Linter'),
             '__cmd__': '{}@python'.format(name) if language == 'python' else name,
-            '__extra_attributes__': extra_attributes,
+            '# __extra_attributes__': extra_attributes,
             '__platform__': platform,
             '__install__': info['installer'].format(name),
             '__extra_install_steps__': extra_steps
@@ -904,7 +893,6 @@ class SublimelinterCreateLinterPluginCommand(sublime_plugin.WindowCommand):
 
 
 class SublimelinterPackageControlCommand(sublime_plugin.WindowCommand):
-
     """
     Abstract superclass for Package Control utility commands.
 
@@ -969,7 +957,6 @@ class SublimelinterPackageControlCommand(sublime_plugin.WindowCommand):
 
 
 class SublimelinterNewPackageControlMessageCommand(SublimelinterPackageControlCommand):
-
     """
     This command automates the process of creating new Package Control release messages.
 
@@ -1094,8 +1081,25 @@ class SublimelinterNewPackageControlMessageCommand(SublimelinterPackageControlCo
         return '\n\n'.join(messages) + '\n'
 
 
-class SublimelinterClearCachesCommand(sublime_plugin.WindowCommand):
+class SublimelinterClearColorSchemeFolderCommand(sublime_plugin.WindowCommand):
+    """A command that clears all of SublimeLinter made color schemes."""
 
+    def run(self):
+        """Run the command."""
+        base_path = os.path.join(sublime.packages_path(), 'User', '*.tmTheme')
+        sublime_path = os.path.join(sublime.packages_path(), 'User', 'SublimeLinter', '*.tmTheme')
+        themes = glob(base_path) + glob(sublime_path)
+        prefs = sublime.load_settings('Preferences.sublime-settings')
+        scheme = prefs.get('color_scheme')
+
+        for theme in themes:
+            # Ensure it is a (SL) theme and it is not current current scheme
+            if re.search(r'\(SL\)', theme) and os.path.normpath(scheme) not in theme:
+                persist.debug('deleting {}'.format(os.path.split(theme)[1]))
+                os.remove(theme)
+
+
+class SublimelinterClearCachesCommand(sublime_plugin.WindowCommand):
     """A command that clears all of SublimeLinter's internal caches."""
 
     def run(self):
@@ -1107,7 +1111,6 @@ class SublimelinterClearCachesCommand(sublime_plugin.WindowCommand):
 
 
 class SublimelinterReportCommand(sublime_plugin.WindowCommand):
-
     """
     A command that displays a report of all errors.
 

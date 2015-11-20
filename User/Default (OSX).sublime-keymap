@@ -134,4 +134,6 @@
     { "keys": ["super+shift+keypad_minus"], "command": "fold_by_level", "args": {"level": 1} },
     { "keys": ["super+keypad_plus"], "command": "unfold" },
 
+    { "keys": ["ctrl+alt+s"], "command": "auto_save" },
+
 ]

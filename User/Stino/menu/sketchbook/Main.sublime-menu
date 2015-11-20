@@ -1,0 +1,43 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Sketchbook", 
+                "children": [
+                    {
+                        "args": {
+                            "sketch_path": "/Users/v_leveque/Documents/Arduino/Keypad"
+                        }, 
+                        "caption": "Keypad", 
+                        "command": "open_sketch"
+                    }, 
+                    {
+                        "args": {
+                            "sketch_path": "/Users/v_leveque/Documents/Arduino/sketch_mar13a"
+                        }, 
+                        "caption": "sketch_mar13a", 
+                        "command": "open_sketch"
+                    }, 
+                    {
+                        "args": {
+                            "sketch_path": "/Users/v_leveque/Documents/Arduino/sketch_mar13b"
+                        }, 
+                        "caption": "sketch_mar13b", 
+                        "command": "open_sketch"
+                    }, 
+                    {
+                        "args": {
+                            "sketch_path": "/Users/v_leveque/Documents/Arduino/StandardFirmata"
+                        }, 
+                        "caption": "StandardFirmata", 
+                        "command": "open_sketch"
+                    }
+                ], 
+                "id": "sketchbook"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

@@ -1,4 +1,5 @@
 <snippet>
     <content>{% endif %}</content>
     <tabTrigger>endif</tabTrigger>
+    <scope>text.html(.basic)</scope>
 </snippet>

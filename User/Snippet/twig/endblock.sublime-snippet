@@ -1,4 +1,5 @@
 <snippet>
     <content>{% endblock %}</content>
     <tabTrigger>endblock</tabTrigger>
+    <scope>text.html(.basic)</scope>
 </snippet>

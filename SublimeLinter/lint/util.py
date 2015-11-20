@@ -17,6 +17,7 @@ import json
 import locale
 from numbers import Number
 import os
+import getpass
 import re
 import shutil
 from string import Template
@@ -58,7 +59,7 @@ ANSI_COLOR_RE = re.compile(r'\033\[[0-9;]*m')
 UNSAVED_FILENAME = 'untitled'
 
 # Temp directory used to store temp files for linting
-tempdir = os.path.join(tempfile.gettempdir(), 'SublimeLinter3')
+tempdir = os.path.join(tempfile.gettempdir(), 'SublimeLinter3-' + getpass.getuser())
 
 
 # settings utils
@@ -217,7 +218,7 @@ def generate_color_scheme_async():
     Generate a modified copy of the current color scheme that contains SublimeLinter color entries.
 
     The current color scheme is checked for SublimeLinter color entries. If any are missing,
-    the scheme is copied, the entries are added, and the color scheme is rewritten to Packages/User.
+    the scheme is copied, the entries are added, and the color scheme is rewritten to Packages/User/SublimeLinter.
 
     """
 
@@ -226,7 +227,7 @@ def generate_color_scheme_async():
 
     if (os.path.isfile(path)):
         try:
-            with open(path, mode='r') as f:
+            with open(path, mode='r', encoding='utf-8') as f:
                 json = f.read()
 
             sublime.decode_value(json)
@@ -267,17 +268,20 @@ def generate_color_scheme_async():
         color = persist.settings.get('{}_color'.format(style), DEFAULT_MARK_COLORS[style]).lstrip('#')
         styles.append(ElementTree.XML(COLOR_SCHEME_STYLES[style].format(color)))
 
-    # Write the amended color scheme to Packages/User
+    if not os.path.exists(os.path.join(sublime.packages_path(), 'User', 'SublimeLinter')):
+        os.makedirs(os.path.join(sublime.packages_path(), 'User', 'SublimeLinter'))
+
+    # Write the amended color scheme to Packages/User/SublimeLinter
     original_name = os.path.splitext(os.path.basename(scheme))[0]
     name = original_name + ' (SL)'
-    scheme_path = os.path.join(sublime.packages_path(), 'User', name + '.tmTheme')
+    scheme_path = os.path.join(sublime.packages_path(), 'User', 'SublimeLinter', name + '.tmTheme')
 
     with open(scheme_path, 'w', encoding='utf8') as f:
         f.write(COLOR_SCHEME_PREAMBLE)
         f.write(ElementTree.tostring(plist, encoding='unicode'))
 
     # Set the amended color scheme to the current color scheme
-    path = os.path.join('User', os.path.basename(scheme_path))
+    path = os.path.join('User', 'SublimeLinter', os.path.basename(scheme_path))
     prefs.set('color_scheme', packages_relative_path(path))
     sublime.save_settings('Preferences.sublime-settings')
 
@@ -288,8 +292,9 @@ def change_mark_colors(error_color, warning_color):
     error_color = error_color.lstrip('#')
     warning_color = warning_color.lstrip('#')
 
-    path = os.path.join(sublime.packages_path(), 'User', '*.tmTheme')
-    themes = glob(path)
+    base_path = os.path.join(sublime.packages_path(), 'User', '*.tmTheme')
+    sublime_path = os.path.join(sublime.packages_path(), 'User', 'SublimeLinter', '*.tmTheme')
+    themes = glob(sublime_path) + glob(base_path)
 
     for theme in themes:
         with open(theme, encoding='utf8') as f:
@@ -301,92 +306,6 @@ def change_mark_colors(error_color, warning_color):
 
             with open(theme, encoding='utf8', mode='w') as f:
                 f.write(text)
-
-
-def install_syntaxes():
-    """Asynchronously call install_syntaxes_async."""
-    sublime.set_timeout_async(install_syntaxes_async, 0)
-
-
-def install_syntaxes_async():
-    """
-    Install fixed syntax packages.
-
-    Unfortunately the scope definitions in some syntax definitions
-    (HTML at the moment) incorrectly define embedded scopes, which leads
-    to spurious lint errors.
-
-    This method copies all of the syntax packages in fixed_syntaxes to Packages
-    so that they override the built in syntax package.
-
-    """
-
-    from . import persist
-
-    plugin_dir = os.path.dirname(os.path.dirname(__file__))
-    syntaxes_dir = os.path.join(plugin_dir, 'fixed-syntaxes')
-
-    for syntax in os.listdir(syntaxes_dir):
-        # See if our version of the syntax already exists in Packages
-        src_dir = os.path.join(syntaxes_dir, syntax)
-        version_file = os.path.join(src_dir, 'sublimelinter.version')
-
-        if not os.path.isdir(src_dir) or not os.path.isfile(version_file):
-            continue
-
-        with open(version_file, encoding='utf8') as f:
-            my_version = int(f.read().strip())
-
-        dest_dir = os.path.join(sublime.packages_path(), syntax)
-        version_file = os.path.join(dest_dir, 'sublimelinter.version')
-
-        if os.path.isdir(dest_dir):
-            if os.path.isfile(version_file):
-                with open(version_file, encoding='utf8') as f:
-                    try:
-                        other_version = int(f.read().strip())
-                    except ValueError:
-                        other_version = 0
-
-                persist.debug('found existing {} syntax, version {}'.format(syntax, other_version))
-                copy = my_version > other_version
-            else:
-                copy = sublime.ok_cancel_dialog(
-                    'An existing {} syntax definition exists, '.format(syntax) +
-                    'and SublimeLinter wants to overwrite it with its own version. ' +
-                    'Is that okay?')
-
-        else:
-            copy = True
-
-        if copy:
-            copy_syntax(syntax, src_dir, my_version, dest_dir)
-
-    update_syntax_map()
-
-
-def copy_syntax(syntax, src_dir, version, dest_dir):
-    """Copy a customized syntax and related files to Packages."""
-    from . import persist
-
-    try:
-        cached = os.path.join(sublime.cache_path(), syntax)
-
-        if os.path.isdir(cached):
-            shutil.rmtree(cached)
-
-        if not os.path.exists(dest_dir):
-            os.mkdir(dest_dir)
-
-        for filename in os.listdir(src_dir):
-            shutil.copy2(os.path.join(src_dir, filename), dest_dir)
-
-        persist.printf('copied {} syntax version {}'.format(syntax, version))
-    except OSError as ex:
-        persist.printf(
-            'ERROR: could not copy {} syntax package: {}'
-            .format(syntax, str(ex))
-        )
 
 
 def update_syntax_map():
@@ -1021,6 +940,11 @@ def find_windows_python(version):
 def find_python_script(python_path, script):
     """Return the path to the given script, or None if not found."""
     if sublime.platform() in ('osx', 'linux'):
+        pyenv = which('pyenv')
+        if pyenv:
+            out = run_shell_cmd((pyenv, 'which', script)).strip().decode()
+            if os.path.isfile(out):
+                return out
         return which(script)
     else:
         # On Windows, scripts may be .exe files or .py files in <python directory>/Scripts
@@ -1454,6 +1378,23 @@ def center_region_in_view(region, view):
     if y2 == y1:
         view.set_viewport_position((x1, y1 - 1.0))
         view.show_at_center(region)
+
+
+class cd:
+    """Context manager for changing the current working directory."""
+
+    def __init__(self, newPath):
+        """Save the new wd."""
+        self.newPath = os.path.expanduser(newPath)
+
+    def __enter__(self):
+        """Save the old wd and change to the new wd."""
+        self.savedPath = os.getcwd()
+        os.chdir(self.newPath)
+
+    def __exit__(self, etype, value, traceback):
+        """Go back to the old wd."""
+        os.chdir(self.savedPath)
 
 
 # color-related constants

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+{{ doctrineDump($1) }}]]></content>
+	<tabTrigger>doctrineDump</tabTrigger>
+    <scope>text.html(.basic)</scope>
+    <description>{{ doctrineDump(foo) }}</description>
+</snippet>

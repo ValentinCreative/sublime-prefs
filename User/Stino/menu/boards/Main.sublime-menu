@@ -1,0 +1,238 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Board", 
+                "children": [
+                    {
+                        "caption": "ARDUINO Boards", 
+                        "command": "none_command"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.uno"
+                        }, 
+                        "caption": "Arduino Uno", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.atmega328"
+                        }, 
+                        "caption": "Arduino Duemilanove w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.diecimila"
+                        }, 
+                        "caption": "Arduino Diecimila or Duemilanove w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.nano328"
+                        }, 
+                        "caption": "Arduino Nano w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.nano"
+                        }, 
+                        "caption": "Arduino Nano w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.mega2560"
+                        }, 
+                        "caption": "Arduino Mega 2560 or Mega ADK", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.mega"
+                        }, 
+                        "caption": "Arduino Mega (ATmega1280)", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.leonardo"
+                        }, 
+                        "caption": "Arduino Leonardo", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.esplora"
+                        }, 
+                        "caption": "Arduino Esplora", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.micro"
+                        }, 
+                        "caption": "Arduino Micro", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.mini328"
+                        }, 
+                        "caption": "Arduino Mini w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.mini"
+                        }, 
+                        "caption": "Arduino Mini w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.ethernet"
+                        }, 
+                        "caption": "Arduino Ethernet", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.fio"
+                        }, 
+                        "caption": "Arduino Fio", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.bt328"
+                        }, 
+                        "caption": "Arduino BT w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.bt"
+                        }, 
+                        "caption": "Arduino BT w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.LilyPadUSB"
+                        }, 
+                        "caption": "LilyPad Arduino USB", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.lilypad328"
+                        }, 
+                        "caption": "LilyPad Arduino w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.lilypad"
+                        }, 
+                        "caption": "LilyPad Arduino w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.pro5v328"
+                        }, 
+                        "caption": "Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.pro5v"
+                        }, 
+                        "caption": "Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.pro328"
+                        }, 
+                        "caption": "Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.pro"
+                        }, 
+                        "caption": "Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.atmega168"
+                        }, 
+                        "caption": "Arduino NG or older w/ ATmega168", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.atmega8"
+                        }, 
+                        "caption": "Arduino NG or older w/ ATmega8", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.robotControl"
+                        }, 
+                        "caption": "Arduino Robot Control", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "args": {
+                            "board_id": "ide.arduino.avr.robotMotor"
+                        }, 
+                        "caption": "Arduino Robot Motor", 
+                        "checkbox": true, 
+                        "command": "select_board"
+                    }, 
+                    {
+                        "caption": "-"
+                    }
+                ], 
+                "id": "boards"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

@@ -32,13 +32,12 @@ LINT_MODES = (
     ('manual', 'Lint only when requested')
 )
 
-SYNTAX_RE = re.compile(r'(?i)/([^/]+)\.tmLanguage$')
+SYNTAX_RE = re.compile(r'(?i)/([^/]+)\.(?:tmLanguage|sublime-syntax)$')
 
 DEFAULT_GUTTER_THEME_PATH = 'Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme'
 
 
 class Settings:
-
     """This class provides global access to and management of plugin settings."""
 
     def __init__(self):

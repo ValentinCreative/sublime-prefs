@@ -16,11 +16,12 @@
 	"font_size": 18,
 	"ignored_packages":
 	[
-		"Markdown",
-		"SassBeautify",
+		"AdvancedNewFile",
+		"JavaScript",
 		"jQuery",
 		"LiveReload",
-		"AdvancedNewFile",
+		"Markdown",
+		"SassBeautify",
 		"Vintage"
 	],
 	"line_padding_bottom": 2,

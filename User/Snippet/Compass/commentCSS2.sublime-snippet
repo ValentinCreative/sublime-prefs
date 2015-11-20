@@ -2,7 +2,7 @@
     <content><![CDATA[/*------------------------------------*\
     \$$1
 \*------------------------------------*/$2]]></content>
-    <scope>source.css,source.scss</scope>
+    <scope>source.css,source.css</scope>
     <tabTrigger>ccc</tabTrigger>
 </snippet>
 
@@ -10,6 +10,6 @@
 	<content><![CDATA[/**
  * $1
  */$2]]></content>
-	<scope>source.css,source.scss</scope>
+	<scope>source.css,source.css</scope>
 	<tabTrigger>cc</tabTrigger>
 </snippet>

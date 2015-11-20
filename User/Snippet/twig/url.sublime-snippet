@@ -1,0 +1,5 @@
+<snippet>
+    <content>{{ url('$1') }}</content>
+    <tabTrigger>url</tabTrigger>
+    <scope>text.html(.basic)</scope>
+</snippet>

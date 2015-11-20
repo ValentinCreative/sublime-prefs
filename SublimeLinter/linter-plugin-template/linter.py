@@ -14,7 +14,6 @@ from SublimeLinter.lint import __superclass__, util
 
 
 class __class__(__superclass__):
-
     """Provides an interface to __linter__."""
 
     syntax = ''
@@ -33,4 +32,4 @@ class __class__(__superclass__):
     defaults = {}
     inline_settings = None
     inline_overrides = None
-    __extra_attributes__
+    # __extra_attributes__

@@ -1,6 +1,7 @@
 <snippet>
 	<content><![CDATA[
-&:hover {
+.no-touch &:hover,
+&:focus {
     $1
 }
 ]]></content>

@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[@include container();]]></content>
+	<tabTrigger>container</tabTrigger>
+    <scope>source.css</scope>
+</snippet>

@@ -4,4 +4,5 @@
     $2
 }]]></content>
 	<tabTrigger>breakpoint</tabTrigger>
+    <scope>source.scss</scope>
 </snippet>

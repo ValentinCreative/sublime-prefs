@@ -13,6 +13,7 @@
 import os
 import re
 import shlex
+import sublime
 
 from . import linter, persist, util
 
@@ -20,7 +21,6 @@ CMD_RE = re.compile(r'(?P<gem>.+?)@ruby')
 
 
 class RubyLinter(linter.Linter):
-
     """
     This Linter subclass provides ruby-specific functionality.
 
@@ -117,6 +117,8 @@ class RubyLinter(linter.Linter):
                 if (rbenv and
                     ('{0}.rbenv{0}shims{0}'.format(os.sep) in gem_path or
                      (os.altsep and '{0}.rbenv{0}shims{0}'.format(os.altsep in gem_path)))):
+                    ruby_cmd = [gem_path]
+                elif (sublime.platform() == 'windows'):
                     ruby_cmd = [gem_path]
                 else:
                     ruby_cmd = [ruby, gem_path]

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@media print {
+    $1
+}
+]]></content>
+	<tabTrigger>print</tabTrigger>
+    <scope>source.scss</scope>
+</snippet>

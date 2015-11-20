@@ -1,5 +1,5 @@
 <snippet>
 	<content><![CDATA[@include box-sizing(border-box); ]]></content>
 	<tabTrigger>bsi</tabTrigger>
-	<scope>source.scss</scope>
+	<scope>source.css</scope>
 </snippet>

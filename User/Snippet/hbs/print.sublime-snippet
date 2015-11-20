@@ -1,4 +1,5 @@
 <snippet>
     <content>{{ $1 }}</content>
     <tabTrigger>print</tabTrigger>
+    <scope>source.hbs</scope>
 </snippet>

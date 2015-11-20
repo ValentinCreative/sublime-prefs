@@ -1,0 +1,87 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Language", 
+                "children": [
+                    {
+                        "args": {
+                            "lang_id": "zh_cn"
+                        }, 
+                        "caption": "\u7b80\u4f53\u4e2d\u6587 (Chinese Simplified)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "en"
+                        }, 
+                        "caption": "English (English)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "fr"
+                        }, 
+                        "caption": "fran\u00e7ais (French)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "de"
+                        }, 
+                        "caption": "Deutsch (German)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "it"
+                        }, 
+                        "caption": "italiano (Italian)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "ja"
+                        }, 
+                        "caption": "\u65e5\u672c\u8a9e (Japanese)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "pt"
+                        }, 
+                        "caption": "portugu\u00eas (Portuguese)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "ru"
+                        }, 
+                        "caption": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a (Russian)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }, 
+                    {
+                        "args": {
+                            "lang_id": "es"
+                        }, 
+                        "caption": "espa\u00f1ol (Spanish)", 
+                        "checkbox": true, 
+                        "command": "select_language"
+                    }
+                ], 
+                "id": "stino_lang"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Serial Port", 
+                "children": [
+                    {
+                        "args": {
+                            "serial_port": "/dev/cu.Bluetooth-Incoming-Port"
+                        }, 
+                        "caption": "/dev/cu.Bluetooth-Incoming-Port", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }, 
+                    {
+                        "args": {
+                            "serial_port": "/dev/cu.Bluetooth-Modem"
+                        }, 
+                        "caption": "/dev/cu.Bluetooth-Modem", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }, 
+                    {
+                        "args": {
+                            "serial_port": "/dev/cu.ValentinBot-DevB"
+                        }, 
+                        "caption": "/dev/cu.ValentinBot-DevB", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }, 
+                    {
+                        "args": {
+                            "serial_port": "/dev/tty.Bluetooth-Incoming-Port"
+                        }, 
+                        "caption": "/dev/tty.Bluetooth-Incoming-Port", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }, 
+                    {
+                        "args": {
+                            "serial_port": "/dev/tty.Bluetooth-Modem"
+                        }, 
+                        "caption": "/dev/tty.Bluetooth-Modem", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }, 
+                    {
+                        "args": {
+                            "serial_port": "/dev/tty.ValentinBot-DevB"
+                        }, 
+                        "caption": "/dev/tty.ValentinBot-DevB", 
+                        "checkbox": true, 
+                        "command": "select_serial_port"
+                    }
+                ], 
+                "id": "serial_port"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

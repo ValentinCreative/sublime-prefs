@@ -3,4 +3,5 @@
 \$this->getEntityManager()->flush();
 ]]></content>
     <tabTrigger>flush</tabTrigger>
+    <scope>source.php</scope>
 </snippet>

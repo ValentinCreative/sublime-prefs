@@ -1,0 +1,143 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Import Library", 
+                "children": [
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/EEPROM"
+                        }, 
+                        "caption": "EEPROM (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Esplora"
+                        }, 
+                        "caption": "Esplora (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Ethernet"
+                        }, 
+                        "caption": "Ethernet (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Firmata"
+                        }, 
+                        "caption": "Firmata (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/GSM"
+                        }, 
+                        "caption": "GSM (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/LiquidCrystal"
+                        }, 
+                        "caption": "LiquidCrystal (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Robot_Control"
+                        }, 
+                        "caption": "Robot_Control (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Robot_Motor"
+                        }, 
+                        "caption": "Robot_Motor (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/RobotIRremote"
+                        }, 
+                        "caption": "RobotIRremote (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/SD"
+                        }, 
+                        "caption": "SD (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Servo"
+                        }, 
+                        "caption": "Servo (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/SoftwareSerial"
+                        }, 
+                        "caption": "SoftwareSerial (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/SPI"
+                        }, 
+                        "caption": "SPI (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Stepper"
+                        }, 
+                        "caption": "Stepper (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/TFT"
+                        }, 
+                        "caption": "TFT (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/WiFi"
+                        }, 
+                        "caption": "WiFi (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "args": {
+                            "library_path": "/Applications/arduino.app/Contents/Resources/Java/libraries/Wire"
+                        }, 
+                        "caption": "Wire (*)", 
+                        "command": "import_library"
+                    }, 
+                    {
+                        "caption": "-"
+                    }, 
+                    {
+                        "caption": "-"
+                    }, 
+                    {
+                        "caption": "-"
+                    }
+                ], 
+                "id": "import_library"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

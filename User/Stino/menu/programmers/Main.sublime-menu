@@ -1,0 +1,70 @@
+[
+    {
+        "caption": "Arduino", 
+        "children": [
+            {
+                "caption": "Programmer", 
+                "children": [
+                    {
+                        "caption": "ARDUINO Boards", 
+                        "command": "none_command"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.avrisp"
+                        }, 
+                        "caption": "AVR ISP", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.avrispmkii"
+                        }, 
+                        "caption": "AVRISP mkII", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.usbtinyisp"
+                        }, 
+                        "caption": "USBtinyISP", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.usbasp"
+                        }, 
+                        "caption": "USBasp", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.parallel"
+                        }, 
+                        "caption": "Parallel Programmer", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "args": {
+                            "programmer_id": "ide.arduino.avr.arduinoisp"
+                        }, 
+                        "caption": "Arduino as ISP", 
+                        "checkbox": true, 
+                        "command": "select_programmer"
+                    }, 
+                    {
+                        "caption": "-"
+                    }
+                ], 
+                "id": "programmers"
+            }
+        ], 
+        "id": "arduino", 
+        "mnemonic": "A"
+    }
+]

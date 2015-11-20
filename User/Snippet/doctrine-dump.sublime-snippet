@@ -3,4 +3,6 @@
 echo "<pre style='background:#fff; color:#000'>";\Doctrine\Common\Util\Debug::dump($1);die();
         ]]></content>
 	<tabTrigger>doctrineDump</tabTrigger>
+    <scope>source.php</scope>
+    <description>doctrineDump</description>
 </snippet>

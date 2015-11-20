@@ -4,4 +4,5 @@
     $3
 }</content>
     <tabTrigger>action</tabTrigger>
+    <scope>source.php</scope>
 </snippet>

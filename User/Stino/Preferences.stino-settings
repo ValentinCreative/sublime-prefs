@@ -1,0 +1,8 @@
+{
+    "arduino_ide_path": "/Applications/arduino.app", 
+    "lang_id": "en", 
+    "serial_port": "/dev/cu.Bluetooth-Incoming-Port", 
+    "sketchbook_path": "/Users/v_leveque/Documents/Arduino", 
+    "target_board_id": "ide.arduino.avr.uno", 
+    "target_programmer_id": "ide.arduino.avr.avrisp"
+}

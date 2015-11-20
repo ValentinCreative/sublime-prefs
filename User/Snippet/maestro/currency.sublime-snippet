@@ -1,4 +1,5 @@
 <snippet>
     <content>{{ currency.symbol }}</content>
     <tabTrigger>currency</tabTrigger>
+    <scope>text.html(.basic)</scope>
 </snippet>
