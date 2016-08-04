@@ -1,1 +1,0 @@
-{"url": "https://github.com/KunihikoKido/sublime-elasticsearch-client", "platforms": ["*"], "dependencies": [], "sublime_text": ">=3000", "version": "2.0.9", "description": "Elasticsearch Client for Sublime Text 3"}
