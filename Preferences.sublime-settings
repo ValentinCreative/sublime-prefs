@@ -17,6 +17,7 @@
 	"ignored_packages":
 	[
 		"AutoFileName",
+		"CSS Extended Completions",
 		"Markdown",
 		"Vintage"
 	],
