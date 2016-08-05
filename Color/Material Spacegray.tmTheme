@@ -1,50 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>author</key>
-    <string>Saad Quadri</string>
-    <key>colorSpaceName</key>
-    <string>sRGB</string>
-    <key>gutterSettings</key>
-    <dict>
-      <key>background</key>
-      <string>#343d46</string>
-      <key>divider</key>
-      <string>#343d46</string>
-      <key>foreground</key>
-      <string>#65737e</string>
-      <key>selectionBackground</key>
-      <string>#4f5b66</string>
-      <key>selectionForeground</key>
-      <string>#a7adba</string>
-    </dict>
-  <key>name</key>
-  <string>Material Spacegray</string>
-  <key>semanticClass</key>
-  <string>material.spacegray.dark</string>
+<dict>
   <key>settings</key>
   <array>
-
     <dict>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#2b303b</string>
+        <string>#2C333D</string>
         <key>caret</key>
-        <string>#c0c5ce</string>
+        <string>#F8F8F0</string>
         <key>foreground</key>
-        <string>#c0c5ce</string>
+        <string>#F8F8F2</string>
         <key>invisibles</key>
-        <string>#65737e</string>
+        <string>#174f4d</string>
         <key>lineHighlight</key>
-        <string>#65737e55</string>
+        <string>#174f4d</string>
         <key>selection</key>
-        <string>#4f5b66</string>
+        <string>#174f4d</string>
+        <key>findHighlight</key>
+        <string>#13ad9e</string>
+        <key>findHighlightForeground</key>
+        <string>#000000</string>
+        <key>selectionBorder</key>
+        <string>#103635</string>
+        <key>activeGuide</key>
+        <string>#174f4d</string>
+
+        <key>bracketsForeground</key>
+        <string>#F8F8F2</string>
+        <key>bracketsOptions</key>
+        <string>underline</string>
+
+        <key>bracketContentsForeground</key>
+        <string>#F8F8F2</string>
+        <key>bracketContentsOptions</key>
+        <string>underline</string>
+
+        <key>tagsOptions</key>
+        <string>stippled_underline</string>
       </dict>
     </dict>
-
-
     <dict>
       <key>name</key>
       <string>Comment</string>
@@ -53,7 +50,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#65737e</string>
+        <string>#5d7377</string>
       </dict>
     </dict>
     <dict>
@@ -64,7 +61,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#CDDC39</string>
+        <string>#e6e994</string>
       </dict>
     </dict>
     <dict>
@@ -75,7 +72,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#CDDC39</string>
+        <string>#b790f5</string>
       </dict>
     </dict>
 
@@ -87,7 +84,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#b790f5</string>
       </dict>
     </dict>
     <dict>
@@ -98,7 +95,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#b790f5</string>
       </dict>
     </dict>
     <dict>
@@ -120,7 +117,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4DB6AC</string>
+        <string>#e6417e</string>
       </dict>
     </dict>
     <dict>
@@ -133,7 +130,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#e6417e</string>
       </dict>
     </dict>
     <dict>
@@ -146,7 +143,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#4DB6AC</string>
+        <string>#7ed2cb</string>
       </dict>
     </dict>
     <dict>
@@ -159,7 +156,7 @@
         <key>fontStyle</key>
         <string>underline</string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#8BC34A</string>
       </dict>
     </dict>
     <dict>
@@ -172,7 +169,7 @@
         <key>fontStyle</key>
         <string>italic underline</string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#8BC34A</string>
       </dict>
     </dict>
     <dict>
@@ -185,7 +182,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#CDDC39</string>
+        <string>#8BC34A</string>
       </dict>
     </dict>
     <dict>
@@ -198,7 +195,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#FD971F</string>
       </dict>
     </dict>
     <dict>
@@ -211,7 +208,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#4DB6AC</string>
+        <string>#e6417e</string>
       </dict>
     </dict>
     <dict>
@@ -224,7 +221,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#8BC34A</string>
       </dict>
     </dict>
     <dict>
@@ -237,7 +234,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#7ed2cb</string>
       </dict>
     </dict>
     <dict>
@@ -250,7 +247,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#7ed2cb</string>
       </dict>
     </dict>
     <dict>
@@ -263,7 +260,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#FF5722</string>
+        <string>#7ed2cb</string>
       </dict>
     </dict>
     <dict>
@@ -285,7 +282,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#00A8C6</string>
+        <string>#e6417e</string>
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
@@ -300,7 +297,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#8FBE00</string>
+        <string>#b790f5</string>
         <key>foreground</key>
         <string>#F8F8F0</string>
       </dict>
@@ -313,7 +310,18 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#CFCFC2</string>
+        <string>#c2cfc8</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>YAML String</string>
+      <key>scope</key>
+      <string>string.unquoted.yaml</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#F8F8F2</string>
       </dict>
     </dict>
 
@@ -325,7 +333,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#75715E</string>
+        <string>#5d7377</string>
       </dict>
     </dict>
     <dict>
@@ -336,7 +344,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#00A8C6</string>
+        <string>#e6417e</string>
       </dict>
     </dict>
     <dict>
@@ -347,7 +355,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#A6E22E</string>
+        <string>#8BC34A</string>
       </dict>
     </dict>
     <dict>
@@ -358,7 +366,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFE082</string>
+        <string>#e6e994</string>
       </dict>
     </dict>
 
@@ -368,127 +376,31 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#8FBE00A0</string>
+        <string>#b790f5A0</string>
       </dict>
     </dict>
     <dict>
       <key>scope</key>
-      <string>entity.name.filename.find-in-files</string>
+      <string>entity.name.filename</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFE082</string>
+        <string>#e6e994</string>
       </dict>
     </dict>
 
     <dict>
-      <key>name</key>
-      <string>Class, Support</string>
       <key>scope</key>
-      <string>entity.name.class, entity.name.type.class, support.type, support.class</string>
+      <string>message.error</string>
       <key>settings</key>
       <dict>
-        <key>fontStyle</key>
-        <string></string>
         <key>foreground</key>
-        <string>#dbcfbe</string>
+        <string>#F83333</string>
       </dict>
     </dict>
 
-    <dict>
-      <key>name</key>
-      <string>String, Symbols, Inherited Class, Markup Heading</string>
-      <key>scope</key>
-      <string>string, constant.other.symbol, entity.other.inherited-class, markup.heading</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#CDDC39</string>
-      </dict>
-    </dict>
-
-    <!--
-    Modifs
-    -->
-
-    <!--
-    Balises php => rouge
-    -->
-    <dict>
-      <key>scope</key>
-      <string>punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#FF5722</string>
-      </dict>
-    </dict>
-
-    <!--
-    PHP dans html => blanc
-    -->
-    <dict>
-      <key>scope</key>
-      <string>source.php.embedded.line</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#dbcfbe</string>
-      </dict>
-    </dict>
-
-    <!--
-    html => bleu
-    -->
-    <dict>
-      <key>scope</key>
-      <string>entity.other.attribute-name.html, entity.other.attribute-name.id, support.constant.property-value.scss</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#4DB6AC</string>
-      </dict>
-    </dict>
-
-    <!--
-    Variable php => jaune
-    -->
-    <dict>
-      <key>scope</key>
-      <string>variable.other.php</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#FFE082</string>
-      </dict>
-    </dict>
-
-    <!--
-    URL/code RGB => vert
-    -->
-    <dict>
-      <key>scope</key>
-      <string>variable.parameter.url.scss, constant.other.color, string.quoted.single.php</string>
-      <key>settings</key>
-      <dict>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#CDDC39</string>
-      </dict>
-    </dict>
   </array>
   <key>uuid</key>
-  <string>21a3a5f5-e82f-48a8-bc8b-9aef307f6131</string>
+  <string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
 </dict>
 </plist>
