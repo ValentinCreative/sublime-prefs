@@ -1,0 +1,5 @@
+<snippet>
+    <content>{{ dump($1) }}</content>
+    <tabTrigger>dump</tabTrigger>
+    <scope>text.html(.basic)</scope>
+</snippet>
