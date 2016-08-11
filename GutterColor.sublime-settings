@@ -8,7 +8,7 @@
   /*
    * The location of the ImageMagic convert script.
    */
-  "convert_path" : "/opt/local/bin/convert",
+  "convert_path" : "/usr/local/bin/convert",
 
   /*
    * The syntax for which to run GutterColor.
