@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[_x('$1', '$2', '$3')]]></content>
+	<tabTrigger>_x</tabTrigger>
+    <scope>source.php</scope>
+</snippet>
