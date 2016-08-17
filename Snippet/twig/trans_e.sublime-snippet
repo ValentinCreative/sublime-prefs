@@ -1,0 +1,5 @@
+<snippet>
+    <content>{{ _e('$1', '$2') }}</content>
+    <tabTrigger>_e</tabTrigger>
+    <scope>text.html(.basic)</scope>
+</snippet>

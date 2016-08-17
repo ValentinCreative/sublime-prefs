@@ -1,0 +1,5 @@
+<snippet>
+    <content>{{ _ex('$1', '$2', '$3') }}</content>
+    <tabTrigger>_ex</tabTrigger>
+    <scope>text.html(.basic)</scope>
+</snippet>
