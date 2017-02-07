@@ -1,5 +1,5 @@
 <snippet>
-    <content>console.log($1);</content>
+    <content>console.log($1)</content>
     <tabTrigger>consolelog</tabTrigger>
     <scope>source.js</scope>
 </snippet>
