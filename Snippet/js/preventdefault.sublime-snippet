@@ -1,7 +1,5 @@
 <snippet>
-	<content><![CDATA[
-if (e) {
-    e.preventDefault();
-}]]></content>
+	<content><![CDATA[e.preventDefault()]]></content>
 	<tabTrigger>preventdefault</tabTrigger>
+    <scope>source.js</scope>
 </snippet>

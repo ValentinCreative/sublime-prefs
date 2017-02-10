@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-{{ doctrineDump($1) }}]]></content>
+{{ doctrineDump($1)|raw }}]]></content>
 	<tabTrigger>doctrineDump</tabTrigger>
     <scope>text.html(.basic)</scope>
-    <description>{{ doctrineDump(foo) }}</description>
+    <description>{{ doctrineDump(foo)|raw }}</description>
 </snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+echo "<pre style='background:#fff; color:#000'>";\Doctrine\Common\Util\Debug::dump($1);die();
+        ]]></content>
+	<tabTrigger>dd</tabTrigger>
+    <scope>source.php</scope>
+    <description>doctrineDump</description>
+</snippet>
