@@ -13,7 +13,6 @@
 		".hg",
 		"CVS",
 		".sass-cache",
-		"tmp",
 		"OLD",
 		".esproj"
 	],
