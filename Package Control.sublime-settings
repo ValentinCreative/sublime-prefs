@@ -6,6 +6,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Alignment",
 		"AlignTab",
 		"All Autocomplete",
@@ -48,6 +49,7 @@
 		"LogView",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"Material Theme",
 		"Materialize",
 		"Materialize-Appbar",
 		"MJML-syntax",
