@@ -1,11 +1,53 @@
 {
 	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.sql",
+		"*.mo",
+		"*.xls",
+		"*.xlsx",
+		"*.csv"
+	],
 	"bold_folder_labels": false,
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"color_scheme": "Packages/User/Color/Material Spacegray.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.sql",
+		"*.mo",
+		"*.xls",
+		"*.xlsx",
+		"*.csv"
+	],
 	"folder_exclude_patterns":
 	[
 		".svn",

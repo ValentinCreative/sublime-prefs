@@ -1,0 +1,27 @@
+[
+  {
+    "class": "title_bar",
+    "bg": [0, 151, 136],
+    "fg": [178, 219, 215]
+  },
+
+  {
+    "class": "sidebar_container",
+    "layer1.texture": "Materialize-Appbar/assets/sidebar_heading.png",
+  },
+
+  {
+    "class": "sidebar_container",
+    "settings": ["material_theme_small_tab", "enable_tab_scrolling"],
+    "layer1.texture": "User/Materialize-Appbar/assets/sidebar_heading--small.png",
+    "layer0.inner_margin": [0, 38, 0, 0],
+  },
+
+  {
+    "class": "sidebar_container",
+    "settings": ["material_theme_small_tab", "!enable_tab_scrolling"],
+    "layer1.texture": "User/Materialize-Appbar/assets/sidebar_heading--small.png",
+  }
+
+
+]
