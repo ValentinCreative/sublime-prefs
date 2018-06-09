@@ -1,0 +1,5 @@
+<snippet>
+    <content>{% $1 %}</content>
+    <tabTrigger>do</tabTrigger>
+    <scope>text.html.django</scope>
+</snippet>
