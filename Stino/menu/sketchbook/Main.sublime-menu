@@ -1,0 +1,1317 @@
+[
+	{
+		"caption": "Arduino",
+		"mnemonic": "A",
+		"id": "arduino",
+		"children":
+		[
+			{
+				"caption": "Open Sketch",
+				"id": "stino_sketchbook",
+				"children":
+				[
+					{
+						"caption": "Refresh",
+						"id": "stino_refresh_sketchbook",
+						"command": "stino_refresh_sketchbook"
+					},
+					{
+						"caption": "Change Location...",
+						"id": "stino_change_sketchbook_location",
+						"command": "stino_change_sketchbook_location"
+					},
+					{
+						"caption": "In New Window",
+						"id": "stino_open_in_new_win",
+						"command": "stino_open_in_new_win",
+						"checkbox": true
+					},
+					{
+						"caption": "All Source Files",
+						"id": "stino_open_all_src",
+						"command": "stino_open_all_src",
+						"checkbox": true
+					},
+					{"caption": "-"},					{
+						"caption": "New Sketch...",
+						"id": "stino_new_sketch",
+						"command": "stino_new_sketch"
+					},
+					{"caption": "-"},
+					{
+						"caption": "Test",
+						"id": "stino_sketch_Test",
+						"command": "stino_open_sketch",
+						"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Test"}
+					},
+					{
+						"caption": "Johnny-Five",
+						"id": "stino_sketch_Johnny-Five",
+						"children":
+						[
+							{"caption": "-"},
+							{
+								"caption": "node_modules",
+								"id": "stino_sketch_node_modules",
+								"children":
+								[
+									{"caption": "-"},
+									{
+										"caption": "I",
+										"id": "stino_sketch_cat_9_I",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "iconv-lite",
+												"id": "stino_sketch_iconv-lite",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "encodings",
+														"id": "stino_sketch_encodings",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "is-number",
+												"id": "stino_sketch_is-number",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "ipaddr.js",
+												"id": "stino_sketch_ipaddr.js",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "is-buffer",
+												"id": "stino_sketch_is-buffer",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "X",
+										"id": "stino_sketch_cat_9_X",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "xmlhttprequest-ssl",
+												"id": "stino_sketch_xmlhttprequest-ssl",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "T",
+										"id": "stino_sketch_cat_9_T",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "temporal",
+												"id": "stino_sketch_temporal",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "to-object-path",
+												"id": "stino_sketch_to-object-path",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "tar-fs",
+												"id": "stino_sketch_tar-fs",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "test",
+														"id": "stino_sketch_test",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "fixtures",
+																"id": "stino_sketch_fixtures",
+																"children":
+																[
+																	{"caption": "-"},
+																	{
+																		"caption": "d",
+																		"id": "stino_sketch_d",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	},
+																	{
+																		"caption": "e",
+																		"id": "stino_sketch_e",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	},
+																	{
+																		"caption": "b",
+																		"id": "stino_sketch_b",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	}																]
+															}														]
+													},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "A",
+										"id": "stino_sketch_cat_9_A",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "async-limiter",
+												"id": "stino_sketch_async-limiter",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "coverage",
+														"id": "stino_sketch_coverage",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "lcov-report",
+																"id": "stino_sketch_lcov-report",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "arraybuffer.slice",
+												"id": "stino_sketch_arraybuffer.slice",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "ansi-styles",
+												"id": "stino_sketch_ansi-styles",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "after",
+												"id": "stino_sketch_after",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "F",
+										"id": "stino_sketch_cat_9_F",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "firmata",
+												"id": "stino_sketch_firmata",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "prebuild-install",
+																"id": "stino_sketch_prebuild-install",
+																"children":
+																[
+																	{"caption": "-"}																]
+															},
+															{
+																"caption": "serialport",
+																"id": "stino_sketch_serialport",
+																"children":
+																[
+																	{"caption": "-"},
+																	{
+																		"caption": "lib",
+																		"id": "stino_sketch_lib",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	},
+																	{
+																		"caption": "build",
+																		"id": "stino_sketch_build",
+																		"children":
+																		[
+																			{"caption": "-"},
+																			{
+																				"caption": "Release",
+																				"id": "stino_sketch_Release",
+																				"children":
+																				[
+																					{"caption": "-"},
+																					{
+																						"caption": "obj.target",
+																						"id": "stino_sketch_obj.target",
+																						"children":
+																						[
+																							{"caption": "-"},
+																							{
+																								"caption": "serialport",
+																								"id": "stino_sketch_serialport",
+																								"children":
+																								[
+																									{"caption": "-"}																								]
+																							}																						]
+																					}																				]
+																			}																		]
+																	},
+																	{
+																		"caption": "src",
+																		"id": "stino_sketch_src",
+																		"command": "stino_open_sketch",
+																		"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Johnny-Five/node_modules/firmata/node_modules/serialport/src"}
+																	}																]
+															},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "D",
+										"id": "stino_sketch_cat_9_D",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "depd",
+												"id": "stino_sketch_depd",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "deep-extend",
+												"id": "stino_sketch_deep-extend",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "detect-libc",
+												"id": "stino_sketch_detect-libc",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "delegates",
+												"id": "stino_sketch_delegates",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "define-property",
+												"id": "stino_sketch_define-property",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "is-accessor-descriptor",
+																"id": "stino_sketch_is-accessor-descriptor",
+																"children":
+																[
+																	{"caption": "-"},
+																	{
+																		"caption": "node_modules",
+																		"id": "stino_sketch_node_modules",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	}																]
+															},
+															{
+																"caption": "is-data-descriptor",
+																"id": "stino_sketch_is-data-descriptor",
+																"children":
+																[
+																	{"caption": "-"},
+																	{
+																		"caption": "node_modules",
+																		"id": "stino_sketch_node_modules",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "debug",
+												"id": "stino_sketch_debug",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "B",
+										"id": "stino_sketch_cat_9_B",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "backo2",
+												"id": "stino_sketch_backo2",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "bl",
+												"id": "stino_sketch_bl",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "base64-arraybuffer",
+												"id": "stino_sketch_base64-arraybuffer",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "body-parser",
+												"id": "stino_sketch_body-parser",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "base64id",
+												"id": "stino_sketch_base64id",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "browser-serialport",
+												"id": "stino_sketch_browser-serialport",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "blob",
+												"id": "stino_sketch_blob",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "H",
+										"id": "stino_sketch_cat_9_H",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "http-errors",
+												"id": "stino_sketch_http-errors",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "P",
+										"id": "stino_sketch_cat_9_P",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "prebuild-install",
+												"id": "stino_sketch_prebuild-install",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "prompt-base",
+												"id": "stino_sketch_prompt-base",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "prompt-question",
+												"id": "stino_sketch_prompt-question",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "prompt-choices",
+												"id": "stino_sketch_prompt-choices",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "promirepl",
+												"id": "stino_sketch_promirepl",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "L",
+										"id": "stino_sketch_cat_9_L",
+										"children":
+										[
+											{"caption": "-"}										]
+									},
+									{
+										"caption": "C",
+										"id": "stino_sketch_cat_9_C",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "commander",
+												"id": "stino_sketch_commander",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "core-util-is",
+												"id": "stino_sketch_core-util-is",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "component-inherit",
+												"id": "stino_sketch_component-inherit",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "clone-deep",
+												"id": "stino_sketch_clone-deep",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "O",
+										"id": "stino_sketch_cat_9_O",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "object-component",
+												"id": "stino_sketch_object-component",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "object-copy",
+												"id": "stino_sketch_object-copy",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "S",
+										"id": "stino_sketch_cat_9_S",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "string_decoder",
+												"id": "stino_sketch_string_decoder",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "shallow-clone",
+												"id": "stino_sketch_shallow-clone",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "socket.io-client",
+												"id": "stino_sketch_socket.io-client",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "semver",
+												"id": "stino_sketch_semver",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "socket.io",
+												"id": "stino_sketch_socket.io",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "simple-concat",
+												"id": "stino_sketch_simple-concat",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "socket.io-parser",
+												"id": "stino_sketch_socket.io-parser",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "serialport",
+												"id": "stino_sketch_serialport",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													},
+													{
+														"caption": "build",
+														"id": "stino_sketch_build",
+														"children":
+														[
+															{"caption": "-"}														]
+													},
+													{
+														"caption": "src",
+														"id": "stino_sketch_src",
+														"command": "stino_open_sketch",
+														"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Johnny-Five/node_modules/serialport/src"}
+													}												]
+											},
+											{
+												"caption": "string-width",
+												"id": "stino_sketch_string-width",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "send",
+												"id": "stino_sketch_send",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "M",
+										"id": "stino_sketch_cat_9_M",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "mixin-object",
+												"id": "stino_sketch_mixin-object",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "mute-stream",
+												"id": "stino_sketch_mute-stream",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "coverage",
+														"id": "stino_sketch_coverage",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "lcov-report",
+																"id": "stino_sketch_lcov-report",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "minimist",
+												"id": "stino_sketch_minimist",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "mime",
+												"id": "stino_sketch_mime",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "mkdirp",
+												"id": "stino_sketch_mkdirp",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "minimist",
+																"id": "stino_sketch_minimist",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "K",
+										"id": "stino_sketch_cat_9_K",
+										"children":
+										[
+											{"caption": "-"}										]
+									},
+									{
+										"caption": "N",
+										"id": "stino_sketch_cat_9_N",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "noop-logger",
+												"id": "stino_sketch_noop-logger",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "nan",
+												"id": "stino_sketch_nan",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "node-abi",
+												"id": "stino_sketch_node-abi",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "negotiator",
+												"id": "stino_sketch_negotiator",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "nanotimer",
+												"id": "stino_sketch_nanotimer",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "E",
+										"id": "stino_sketch_cat_9_E",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "express",
+												"id": "stino_sketch_express",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "engine.io-client",
+												"id": "stino_sketch_engine.io-client",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "engine.io-parser",
+												"id": "stino_sketch_engine.io-parser",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "engine.io",
+												"id": "stino_sketch_engine.io",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "debug",
+																"id": "stino_sketch_debug",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "U",
+										"id": "stino_sketch_cat_9_U",
+										"children":
+										[
+											{"caption": "-"}										]
+									},
+									{
+										"caption": "R",
+										"id": "stino_sketch_cat_9_R",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "readline-utils",
+												"id": "stino_sketch_readline-utils",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "raw-body",
+												"id": "stino_sketch_raw-body",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "depd",
+																"id": "stino_sketch_depd",
+																"children":
+																[
+																	{"caption": "-"},
+																	{
+																		"caption": "lib",
+																		"id": "stino_sketch_lib",
+																		"children":
+																		[
+																			{"caption": "-"}																		]
+																	}																]
+															}														]
+													}												]
+											},
+											{
+												"caption": "rc",
+												"id": "stino_sketch_rc",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "readable-stream",
+												"id": "stino_sketch_readable-stream",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"},
+															{
+																"caption": "internal",
+																"id": "stino_sketch_internal",
+																"children":
+																[
+																	{"caption": "-"}																]
+															}														]
+													},
+													{
+														"caption": "doc",
+														"id": "stino_sketch_doc",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "J",
+										"id": "stino_sketch_cat_9_J",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "johnny-five",
+												"id": "stino_sketch_johnny-five",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "lib",
+														"id": "stino_sketch_lib",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "Q",
+										"id": "stino_sketch_cat_9_Q",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "qs",
+												"id": "stino_sketch_qs",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "G",
+										"id": "stino_sketch_cat_9_G",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "github-from-package",
+												"id": "stino_sketch_github-from-package",
+												"children":
+												[
+													{"caption": "-"}												]
+											},
+											{
+												"caption": "gauge",
+												"id": "stino_sketch_gauge",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											}										]
+									},
+									{
+										"caption": "V",
+										"id": "stino_sketch_cat_9_V",
+										"children":
+										[
+											{"caption": "-"}										]
+									},
+									{
+										"caption": "W",
+										"id": "stino_sketch_cat_9_W",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "window-size",
+												"id": "stino_sketch_window-size",
+												"children":
+												[
+													{"caption": "-"},
+													{
+														"caption": "node_modules",
+														"id": "stino_sketch_node_modules",
+														"children":
+														[
+															{"caption": "-"}														]
+													}												]
+											},
+											{
+												"caption": "ws",
+												"id": "stino_sketch_ws",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "@",
+										"id": "stino_sketch_cat_9_@",
+										"children":
+										[
+											{"caption": "-"},
+											{
+												"caption": "@serialport",
+												"id": "stino_sketch_@serialport",
+												"children":
+												[
+													{"caption": "-"}												]
+											}										]
+									},
+									{
+										"caption": "Y",
+										"id": "stino_sketch_cat_9_Y",
+										"children":
+										[
+											{"caption": "-"}										]
+									}								]
+							}						]
+					},
+					{
+						"caption": "I2C",
+						"id": "stino_sketch_I2C",
+						"children":
+						[
+							{"caption": "-"},
+							{
+								"caption": "Slave",
+								"id": "stino_sketch_Slave",
+								"command": "stino_open_sketch",
+								"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/I2C/Slave"}
+							},
+							{
+								"caption": "Master",
+								"id": "stino_sketch_Master",
+								"command": "stino_open_sketch",
+								"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/I2C/Master"}
+							}						]
+					},
+					{
+						"caption": "sketch_sigfox_init",
+						"id": "stino_sketch_sketch_sigfox_init",
+						"command": "stino_open_sketch",
+						"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/sketch_sigfox_init"}
+					},
+					{
+						"caption": "Temp___location_Sigfox",
+						"id": "stino_sketch_Temp___location_Sigfox",
+						"command": "stino_open_sketch",
+						"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Temp___location_Sigfox"}
+					},
+					{
+						"caption": "Sender-Receiver",
+						"id": "stino_sketch_Sender-Receiver",
+						"children":
+						[
+							{"caption": "-"},
+							{
+								"caption": "sketch_sender",
+								"id": "stino_sketch_sketch_sender",
+								"command": "stino_open_sketch",
+								"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Sender-Receiver/sketch_sender"}
+							},
+							{
+								"caption": "sketch_receiver",
+								"id": "stino_sketch_sketch_receiver",
+								"command": "stino_open_sketch",
+								"args": {"sketch_path": "/Users/valentinleveque/Documents/Arduino/Sender-Receiver/sketch_receiver"}
+							}						]
+					}
+				]
+			}
+		]
+	}
+]
