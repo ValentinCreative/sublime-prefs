@@ -58,10 +58,11 @@
 		"OLD",
 		".esproj"
 	],
-	"font_face": "Anonymous Pro",
+	"font_face": "Fira Code",
 	"font_options":
 	[
-		"gray_antialias"
+		"gray_antialias",
+		"dlig"
 	],
 	"font_size": 18,
 	"ignored_packages":
