@@ -38,10 +38,10 @@
 						[
 							{"caption": "-"},
 							{
-								"caption": "Arduino SAMD Boards (32-bits ARM Cortex-M0+)",
-								"id": "stino_platform_Arduino SAMD Boards (32-bits ARM Cortex-M0+)",
+								"caption": "samd",
+								"id": "stino_platform_samd",
 								"command": "stino_select_platform",
-								"args": {"package_name": "arduino", "platform_name": "Arduino SAMD Boards (32-bits ARM Cortex-M0+)"},
+								"args": {"package_name": "arduino", "platform_name": "samd"},
 								"checkbox": true
 							}
 						]

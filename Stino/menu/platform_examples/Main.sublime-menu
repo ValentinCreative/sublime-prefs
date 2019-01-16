@@ -17,6 +17,51 @@
 					},
 					{"caption": "-"},					{"caption": "-"},
 					{
+						"caption": "USBHost",
+						"id": "stino_example_USBHost",
+						"children":
+						[
+							{"caption": "-"},
+							{
+								"caption": "examples",
+								"id": "stino_example_examples",
+								"children":
+								[
+									{"caption": "-"},
+									{
+										"caption": "MouseController",
+										"id": "stino_example_MouseController",
+										"command": "stino_open_example",
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/USBHost/examples/MouseController"}
+									},
+									{
+										"caption": "KeyboardController",
+										"id": "stino_example_KeyboardController",
+										"command": "stino_open_example",
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/USBHost/examples/KeyboardController"}
+									},
+									{
+										"caption": "ADKTerminalTest",
+										"id": "stino_example_ADKTerminalTest",
+										"command": "stino_open_example",
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/USBHost/examples/ADKTerminalTest"}
+									},
+									{
+										"caption": "USB_desc",
+										"id": "stino_example_USB_desc",
+										"command": "stino_open_example",
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/USBHost/examples/USB_desc"}
+									}								]
+							},
+							{
+								"caption": "src",
+								"id": "stino_example_src",
+								"children":
+								[
+									{"caption": "-"}								]
+							}						]
+					},
+					{
 						"caption": "Wire",
 						"id": "stino_example_Wire",
 						"children":
@@ -32,57 +77,43 @@
 										"caption": "slave_sender",
 										"id": "stino_example_slave_sender",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/slave_sender"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/slave_sender"}
 									},
 									{
 										"caption": "digital_potentiometer",
 										"id": "stino_example_digital_potentiometer",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/digital_potentiometer"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/digital_potentiometer"}
 									},
 									{
 										"caption": "SFRRanger_reader",
 										"id": "stino_example_SFRRanger_reader",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/SFRRanger_reader"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/SFRRanger_reader"}
 									},
 									{
 										"caption": "master_writer",
 										"id": "stino_example_master_writer",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/master_writer"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/master_writer"}
 									},
 									{
 										"caption": "slave_receiver",
 										"id": "stino_example_slave_receiver",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/slave_receiver"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/slave_receiver"}
 									},
 									{
 										"caption": "master_reader",
 										"id": "stino_example_master_reader",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/examples/master_reader"}
-									}								]
-							},
-							{
-								"caption": "src",
-								"id": "stino_example_src",
-								"children":
-								[
-									{"caption": "-"},
-									{
-										"caption": "utility",
-										"id": "stino_example_utility",
-										"children":
-										[
-											{"caption": "-"}										]
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/Wire/examples/master_reader"}
 									}								]
 							}						]
 					},
 					{
-						"caption": "SoftwareSerial",
-						"id": "stino_example_SoftwareSerial",
+						"caption": "SDU",
+						"id": "stino_example_SDU",
 						"children":
 						[
 							{"caption": "-"},
@@ -93,16 +124,51 @@
 								[
 									{"caption": "-"},
 									{
-										"caption": "SoftwareSerialExample",
-										"id": "stino_example_SoftwareSerialExample",
+										"caption": "Usage",
+										"id": "stino_example_Usage",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/examples/SoftwareSerialExample"}
-									},
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/SDU/examples/Usage"}
+									}								]
+							},
+							{
+								"caption": "src",
+								"id": "stino_example_src",
+								"children":
+								[
+									{"caption": "-"},
 									{
-										"caption": "TwoPortReceive",
-										"id": "stino_example_TwoPortReceive",
+										"caption": "boot",
+										"id": "stino_example_boot",
+										"children":
+										[
+											{"caption": "-"}										]
+									}								]
+							},
+							{
+								"caption": "extras",
+								"id": "stino_example_extras",
+								"children":
+								[
+									{"caption": "-"}								]
+							}						]
+					},
+					{
+						"caption": "SAMD_AnalogCorrection",
+						"id": "stino_example_SAMD_AnalogCorrection",
+						"children":
+						[
+							{"caption": "-"},
+							{
+								"caption": "examples",
+								"id": "stino_example_examples",
+								"children":
+								[
+									{"caption": "-"},
+									{
+										"caption": "CorrectADCResponse",
+										"id": "stino_example_CorrectADCResponse",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/examples/TwoPortReceive"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/SAMD_AnalogCorrection/examples/CorrectADCResponse"}
 									}								]
 							},
 							{
@@ -129,21 +195,14 @@
 										"caption": "DigitalPotControl",
 										"id": "stino_example_DigitalPotControl",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/examples/DigitalPotControl"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/SPI/examples/DigitalPotControl"}
 									},
 									{
 										"caption": "BarometricPressureSensor",
 										"id": "stino_example_BarometricPressureSensor",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/examples/BarometricPressureSensor"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/SPI/examples/BarometricPressureSensor"}
 									}								]
-							},
-							{
-								"caption": "src",
-								"id": "stino_example_src",
-								"children":
-								[
-									{"caption": "-"}								]
 							}						]
 					},
 					{
@@ -151,18 +210,11 @@
 						"id": "stino_example_HID",
 						"children":
 						[
-							{"caption": "-"},
-							{
-								"caption": "src",
-								"id": "stino_example_src",
-								"children":
-								[
-									{"caption": "-"}								]
-							}						]
+							{"caption": "-"}						]
 					},
 					{
-						"caption": "EEPROM",
-						"id": "stino_example_EEPROM",
+						"caption": "I2S",
+						"id": "stino_example_I2S",
 						"children":
 						[
 							{"caption": "-"},
@@ -173,52 +225,16 @@
 								[
 									{"caption": "-"},
 									{
-										"caption": "eeprom_write",
-										"id": "stino_example_eeprom_write",
+										"caption": "InputSerialPlotter",
+										"id": "stino_example_InputSerialPlotter",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_write"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/I2S/examples/InputSerialPlotter"}
 									},
 									{
-										"caption": "eeprom_iteration",
-										"id": "stino_example_eeprom_iteration",
+										"caption": "SimpleTone",
+										"id": "stino_example_SimpleTone",
 										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_iteration"}
-									},
-									{
-										"caption": "eeprom_clear",
-										"id": "stino_example_eeprom_clear",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_clear"}
-									},
-									{
-										"caption": "eeprom_read",
-										"id": "stino_example_eeprom_read",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_read"}
-									},
-									{
-										"caption": "eeprom_get",
-										"id": "stino_example_eeprom_get",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_get"}
-									},
-									{
-										"caption": "eeprom_crc",
-										"id": "stino_example_eeprom_crc",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_crc"}
-									},
-									{
-										"caption": "eeprom_put",
-										"id": "stino_example_eeprom_put",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_put"}
-									},
-									{
-										"caption": "eeprom_update",
-										"id": "stino_example_eeprom_update",
-										"command": "stino_open_example",
-										"args": {"example_path": "/applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/EEPROM/examples/eeprom_update"}
+										"args": {"example_path": "/Users/valentinleveque/Library/Arduino15/packages/arduino/hardware/samd/1.6.19/libraries/I2S/examples/SimpleTone"}
 									}								]
 							},
 							{
@@ -226,7 +242,14 @@
 								"id": "stino_example_src",
 								"children":
 								[
-									{"caption": "-"}								]
+									{"caption": "-"},
+									{
+										"caption": "utility",
+										"id": "stino_example_utility",
+										"children":
+										[
+											{"caption": "-"}										]
+									}								]
 							}						]
 					}
 				]

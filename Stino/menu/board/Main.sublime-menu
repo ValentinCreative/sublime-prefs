@@ -27,185 +27,101 @@
 					},
 					{"caption": "-"},
 					{
-						"caption": "Arduino Yún",
-						"id": "stino_board_Arduino Yún",
+						"caption": "Arduino/Genuino Zero (Programming Port)",
+						"id": "stino_board_Arduino/Genuino Zero (Programming Port)",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Yún"},
+						"args": {"board_name": "Arduino/Genuino Zero (Programming Port)"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino/Genuino Uno",
-						"id": "stino_board_Arduino/Genuino Uno",
+						"caption": "Arduino/Genuino Zero (Native USB Port)",
+						"id": "stino_board_Arduino/Genuino Zero (Native USB Port)",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino/Genuino Uno"},
+						"args": {"board_name": "Arduino/Genuino Zero (Native USB Port)"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Duemilanove or Diecimila",
-						"id": "stino_board_Arduino Duemilanove or Diecimila",
+						"caption": "Arduino/Genuino MKR1000",
+						"id": "stino_board_Arduino/Genuino MKR1000",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Duemilanove or Diecimila"},
+						"args": {"board_name": "Arduino/Genuino MKR1000"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Nano",
-						"id": "stino_board_Arduino Nano",
+						"caption": "Arduino MKRZERO",
+						"id": "stino_board_Arduino MKRZERO",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Nano"},
+						"args": {"board_name": "Arduino MKRZERO"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino/Genuino Mega or Mega 2560",
-						"id": "stino_board_Arduino/Genuino Mega or Mega 2560",
+						"caption": "Arduino MKR FOX 1200",
+						"id": "stino_board_Arduino MKR FOX 1200",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino/Genuino Mega or Mega 2560"},
+						"args": {"board_name": "Arduino MKR FOX 1200"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Mega ADK",
-						"id": "stino_board_Arduino Mega ADK",
+						"caption": "Arduino MKR GSM 1400",
+						"id": "stino_board_Arduino MKR GSM 1400",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Mega ADK"},
+						"args": {"board_name": "Arduino MKR GSM 1400"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Leonardo",
-						"id": "stino_board_Arduino Leonardo",
+						"caption": "Arduino MKR WAN 1300",
+						"id": "stino_board_Arduino MKR WAN 1300",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Leonardo"},
+						"args": {"board_name": "Arduino MKR WAN 1300"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Leonardo ETH",
-						"id": "stino_board_Arduino Leonardo ETH",
+						"caption": "Arduino MKR WiFi 1010",
+						"id": "stino_board_Arduino MKR WiFi 1010",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Leonardo ETH"},
+						"args": {"board_name": "Arduino MKR WiFi 1010"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino/Genuino Micro",
-						"id": "stino_board_Arduino/Genuino Micro",
+						"caption": "Adafruit Circuit Playground Express",
+						"id": "stino_board_Adafruit Circuit Playground Express",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino/Genuino Micro"},
+						"args": {"board_name": "Adafruit Circuit Playground Express"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Esplora",
-						"id": "stino_board_Arduino Esplora",
+						"caption": "Arduino M0 Pro (Programming Port)",
+						"id": "stino_board_Arduino M0 Pro (Programming Port)",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Esplora"},
+						"args": {"board_name": "Arduino M0 Pro (Programming Port)"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Mini",
-						"id": "stino_board_Arduino Mini",
+						"caption": "Arduino M0 Pro (Native USB Port)",
+						"id": "stino_board_Arduino M0 Pro (Native USB Port)",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Mini"},
+						"args": {"board_name": "Arduino M0 Pro (Native USB Port)"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Ethernet",
-						"id": "stino_board_Arduino Ethernet",
+						"caption": "Arduino M0",
+						"id": "stino_board_Arduino M0",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Ethernet"},
+						"args": {"board_name": "Arduino M0"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino Fio",
-						"id": "stino_board_Arduino Fio",
+						"caption": "Arduino Tian",
+						"id": "stino_board_Arduino Tian",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Fio"},
+						"args": {"board_name": "Arduino Tian"},
 						"checkbox": true
 					},
 					{
-						"caption": "Arduino BT",
-						"id": "stino_board_Arduino BT",
+						"caption": "Arduino Tian (MIPS Console port)",
+						"id": "stino_board_Arduino Tian (MIPS Console port)",
 						"command": "stino_select_board",
-						"args": {"board_name": "Arduino BT"},
-						"checkbox": true
-					},
-					{
-						"caption": "LilyPad Arduino USB",
-						"id": "stino_board_LilyPad Arduino USB",
-						"command": "stino_select_board",
-						"args": {"board_name": "LilyPad Arduino USB"},
-						"checkbox": true
-					},
-					{
-						"caption": "LilyPad Arduino",
-						"id": "stino_board_LilyPad Arduino",
-						"command": "stino_select_board",
-						"args": {"board_name": "LilyPad Arduino"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Pro or Pro Mini",
-						"id": "stino_board_Arduino Pro or Pro Mini",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Pro or Pro Mini"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino NG or older",
-						"id": "stino_board_Arduino NG or older",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino NG or older"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Robot Control",
-						"id": "stino_board_Arduino Robot Control",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Robot Control"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Robot Motor",
-						"id": "stino_board_Arduino Robot Motor",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Robot Motor"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Gemma",
-						"id": "stino_board_Arduino Gemma",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Gemma"},
-						"checkbox": true
-					},
-					{
-						"caption": "Adafruit Circuit Playground",
-						"id": "stino_board_Adafruit Circuit Playground",
-						"command": "stino_select_board",
-						"args": {"board_name": "Adafruit Circuit Playground"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Yún Mini",
-						"id": "stino_board_Arduino Yún Mini",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Yún Mini"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Industrial 101",
-						"id": "stino_board_Arduino Industrial 101",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Industrial 101"},
-						"checkbox": true
-					},
-					{
-						"caption": "Linino One",
-						"id": "stino_board_Linino One",
-						"command": "stino_select_board",
-						"args": {"board_name": "Linino One"},
-						"checkbox": true
-					},
-					{
-						"caption": "Arduino Uno WiFi",
-						"id": "stino_board_Arduino Uno WiFi",
-						"command": "stino_select_board",
-						"args": {"board_name": "Arduino Uno WiFi"},
+						"args": {"board_name": "Arduino Tian (MIPS Console port)"},
 						"checkbox": true
 					}
 				]

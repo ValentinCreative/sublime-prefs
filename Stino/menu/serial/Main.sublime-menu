@@ -22,13 +22,6 @@
 						"command": "stino_select_serial",
 						"args": {"serial_port": "/dev/cu.Bluetooth-Incoming-Port"},
 						"checkbox": true
-					},
-					{
-						"caption": "/dev/cu.usbmodem1421",
-						"id": "stino_serial_/dev/cu.usbmodem1421",
-						"command": "stino_select_serial",
-						"args": {"serial_port": "/dev/cu.usbmodem1421"},
-						"checkbox": true
 					}
 				]
 			}
