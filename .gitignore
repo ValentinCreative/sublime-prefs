@@ -1,4 +1,7 @@
-Package Control.last-run
-Package Control.cache
+*.last-run
+*.cache
+*.crt
+*-ca-bundle
 Color Highlighter/themes/
 Color Highlighter/icons/
+*.DS_STORE*
