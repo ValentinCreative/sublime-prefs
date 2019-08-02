@@ -1,0 +1,52 @@
+{
+	"history":
+	[
+		{
+			"data":
+			{
+				"args":
+				{
+					"context": "file",
+					"keep": true,
+					"operator": "add",
+					"pattern": "([A-Z]* )",
+					"use_regex": true
+				},
+				"command": "text_pastry_modify_selection",
+				"pattern": "([A-Z]* )"
+			},
+			"key": "237c4259786a5fb0a0469b0c52e80537",
+			"label": "([A-Z]* )"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"context": "file",
+					"keep": true,
+					"operator": "add",
+					"pattern": "([A-Z ]+ )",
+					"use_regex": true
+				},
+				"command": "text_pastry_modify_selection",
+				"pattern": "([A-Z ]+ )"
+			},
+			"key": "157843cceff8448d2e2ef0ffe71f2261",
+			"label": "([A-Z ]+ )"
+		}
+	],
+	"last_command":
+	{
+		"args":
+		{
+			"context": "file",
+			"keep": true,
+			"operator": "add",
+			"pattern": "([A-Z ]+ )",
+			"use_regex": true
+		},
+		"command": "text_pastry_modify_selection",
+		"pattern": "([A-Z ]+ )"
+	}
+}

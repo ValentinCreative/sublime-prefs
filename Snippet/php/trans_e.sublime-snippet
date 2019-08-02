@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[_e('$1', '$2')]]></content>
-	<tabTrigger>_e</tabTrigger>
-    <scope>source.php</scope>
-</snippet>
