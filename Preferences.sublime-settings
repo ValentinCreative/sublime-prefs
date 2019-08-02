@@ -25,7 +25,7 @@
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_extra_width": 2,
-	"caret_style": "phase",
+	"caret_style": "smooth",
 	"color_scheme": "Packages/User/Color/Material Spacegray.tmTheme",
 	"file_exclude_patterns":
 	[
@@ -67,11 +67,6 @@
 	"font_size": 18,
 	"ignored_packages":
 	[
-		"AutoFileName",
-		"CSS Extended Completions",
-		"Markdown",
-		"MarkdownEditing",
-		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -93,5 +88,6 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
+	"overlay_scroll_bars" : "enabled",
 	"word_wrap": true
 }
