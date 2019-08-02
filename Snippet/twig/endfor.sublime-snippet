@@ -1,5 +1,0 @@
-<snippet>
-    <content>{% endfor %}</content>
-    <tabTrigger>endfor</tabTrigger>
-    <scope>text.html.twig</scope>
-</snippet>

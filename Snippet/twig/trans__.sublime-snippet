@@ -1,5 +1,0 @@
-<snippet>
-    <content>{{ __('$1', '$2') }}</content>
-    <tabTrigger>__</tabTrigger>
-    <scope>text.html.twig</scope>
-</snippet>

@@ -1,5 +1,0 @@
-<snippet>
-    <content>{{ dump($1) }}</content>
-    <tabTrigger>dump</tabTrigger>
-    <scope>text.html.twig</scope>
-</snippet>

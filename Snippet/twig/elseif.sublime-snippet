@@ -1,5 +1,0 @@
-<snippet>
-    <content>{% elseif %}</content>
-    <tabTrigger>elseif</tabTrigger>
-    <scope>text.html.twig</scope>
-</snippet>

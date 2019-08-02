@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-.no-touch &:hover,
-&:focus {
-    $1
-}
-]]></content>
-	<tabTrigger>hover</tabTrigger>
-</snippet>
