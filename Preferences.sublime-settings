@@ -83,11 +83,11 @@
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tree_headings": true,
 	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
 	"tab_size": 4,
 	"theme": "Material Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
-	"overlay_scroll_bars" : "enabled",
 	"word_wrap": true
 }
