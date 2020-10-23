@@ -25,22 +25,6 @@
     { "keys": ["super+shift+down"], "command": "duplicate_line" },
     { "keys": ["super+k"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
-    // super + e => <?= ?>
-    { "keys": ["super+e"], "command": "insert_snippet", "args": {"contents": "<?= ${1}; ?>${2}"},
-        "context": [{
-          "operand": "text.html",
-          "operator": "equal",
-          "match_all": true,
-          "key": "selector"
-        },{
-          "operand": "source.php",
-          "operator": "not_equal",
-          "match_all": true,
-          "key": "selector"
-        }]
-    },
-
-
     /*
     * Emmet
     * http://www.sublimetext.com/forum/viewtopic.php?f=2&t=2633
@@ -49,7 +33,7 @@
         "keys": [
             "super+e"
         ],
-        "command": "wrap_as_you_type",
+        "command": "emmet_action_enabled.wrap_as_you_type",
         "context": [
             {
                 "operand": false,
@@ -60,8 +44,7 @@
             {
                 "match_all": true,
                 "key": "emmet_action_enabled.wrap_as_you_type"
-            },
-            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+            }
         ]
     },
 
