@@ -64,7 +64,7 @@
 		"gray_antialias",
 		"dlig"
 	],
-	"font_size": 18,
+	"font_size": 19,
 	"ignored_packages":
 	[
 		"Markdown",

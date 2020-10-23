@@ -1,14 +1,20 @@
 {
-    "extensions_path" : "D:\\App\\Sublime Text 3\\Data\\Packages\\User\\Emmet",
-    "preferences": {
-        "css.autoInsertVendorPrefixes": false,
-        "css.propertyEnd": ";",
-    },
-    "snippets": {
-        "css": {
-         "abbreviations": {
-             "df": "display: flex;"
-         }
-        }
-    }
+	"extensions_path": "D:\\App\\Sublime Text 3\\Data\\Packages\\User\\Emmet",
+	"preferences":
+	{
+		"css.autoInsertVendorPrefixes": false,
+		"css.propertyEnd": ";"
+	},
+	"snippets":
+	{
+		"css":
+		{
+			"abbreviations":
+			{
+				"df": "display: flex;"
+			}
+		}
+	},
+	"telemetry": true,
+	"uid": "24e15699-7e1d-4142-9b2e-f065b1c1479c"
 }
