@@ -29,23 +29,11 @@
     * Emmet
     * http://www.sublimetext.com/forum/viewtopic.php?f=2&t=2633
     **/
+    // Wrap with Abbreviation
     {
-        "keys": [
-            "super+e"
-        ],
-        "command": "emmet_action_enabled.wrap_as_you_type",
-        "context": [
-            {
-                "operand": false,
-                "operator": "equal",
-                "match_all": true,
-                "key": "setting.is_widget"
-            },
-            {
-                "match_all": true,
-                "key": "emmet_action_enabled.wrap_as_you_type"
-            }
-        ]
+        "keys": ["super+e"],
+        "command": "emmet_wrap_with_abbreviation",
+        "context": [{"key": "setting.is_widget",  "operand": false }]
     },
 
     // Alignment
