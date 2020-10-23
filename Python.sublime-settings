@@ -1,0 +1,4 @@
+{
+    "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}],
+    "complete_parameters": true,
+}

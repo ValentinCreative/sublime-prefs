@@ -71,6 +71,8 @@
 		"Stylus",
 		"sublack",
 		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-pycodestyle",
 		"SublimeLinter-xmllint",
 		"SummitLinter",
 		"Super Calculator",
