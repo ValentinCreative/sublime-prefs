@@ -3,7 +3,7 @@
 	"preferences":
 	{
 		"css.autoInsertVendorPrefixes": false,
-		"css.propertyEnd": ";"
+		"css.propertyEnd": ";",
 	},
 	"snippets":
 	{
@@ -11,10 +11,10 @@
 		{
 			"abbreviations":
 			{
-				"df": "display: flex;"
-			}
-		}
+				"df": "display: flex;",
+			},
+		},
 	},
 	"telemetry": true,
-	"uid": "24e15699-7e1d-4142-9b2e-f065b1c1479c"
+	"uid": "24e15699-7e1d-4142-9b2e-f065b1c1479c",
 }
