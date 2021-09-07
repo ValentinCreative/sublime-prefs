@@ -90,8 +90,6 @@
 		"VueFormatter",
 		"Vuejs Complete Package",
 		"W3CValidators",
-		"WordPress",
-		"WordPress Generate Salts"
 	],
 	"repositories":
 	[
@@ -100,5 +98,5 @@
 	"repository_channels":
 	[
 		"http://sublime.wbond.net/repositories.json"
-	]
+	],
 }
